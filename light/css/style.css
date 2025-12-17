@@ -38,9 +38,8 @@ html,body{
 }
 
 
-
 .toppage .ballerina{
-    display: block;
+    display: flex;
     justify-content: center;
 }
 
