@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+html,body{
+    background-color: #f8f8f8;
+    color:#463f35;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* トップページのコード */
+.toppage{
+    position: relative;
+}
+.toppage .star::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') center/cover no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+.blackribbon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.blackribbon img{
+    width: 1440px;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.toppage .ballerina{
+    display: block;
+    justify-content: center;
+}
+
+.ballerina img{
+    width: 500px;
+    height: 799px;
+}
+
+
+.family{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 0.6em;
+    flex-direction: row;
+}
+
+.scroll-indicator{
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 0;
+    top: 544px;
+}
+
+.scroll-indicator .line{
+    width: 2px;
+    height: 236px;
+    background-color: #000000;
+}
+
+.scroll-indicator .text{
+    font-size: 30px;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* オートクチュールのコード */
+.logo{
+    position: relative;
+    width: 100%;
+}
+.logo img{
+    position: absolute;
+    width: 364px;
+    height: 335px;
+}
+.hautecouture{
+    display: flex;
+    align-items: center;
+}
+.hautecouture .pickup{
+    text-align: center;
+    font-size: 37px;
+}
+.hautecouture .minitext{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* アバウトミーのコード */
