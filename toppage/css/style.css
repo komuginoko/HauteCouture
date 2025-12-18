@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+html,body{
+    background-color: #f8f8f8;
+    color:#463f35;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* トップページのコード */
+.light{
+    position: relative;
+}
+.star img{
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.blackribbon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.blackribbon img{
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+
+.toppage .ballerina{
+    display: flex;
+    justify-content: center;
+    margin-top: -185px;
+}
+
+.ballerina img{
+    width: 500px;
+    height: 799px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.family{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 0.6em;
+    flex-direction: row;
+}
+
+.scroll-indicator{
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 0;
+    top: 544px;
+}
+
+.scroll-indicator .line{
+    width: 2px;
+    height: 236px;
+    background-color: #000000;
+}
+
+.scroll-indicator .text{
+    font-size: 30px;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* オートクチュールのコード */
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 364px;
+    height: 335px;
+}
+
+.hautecouture .pickup{
+    text-align: center;
+    font-size: 37px;
+}
+.hautecouture .minitext{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* アバウトミーのコード */
+h2{
+    text-align: center;
+}
+h2 p:nth-child(1){
+    font-size: 66px;
+}
+h2 p:nth-child(2){
+    font-size: 23px;
+    margin-top: -70px;
+}
+
+.lase{
+    background-image: url(./image/lase.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.me{
+    width: 302px;
+    height: auto;
+    position: absolute;
+}
+.metext{
+    margin-left: auto;
+    text-align: left;
+    position: absolute;
+}
+.metext p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 24px;
+}
+.metext{
+    font-size: 18px;
+}
+
+
+/* ワークスのコード */
+h2{
+    text-align: center;
+}
+h2 p:nth-child(1){
+    font-size: 66px;
+}
+h2 p:nth-child(2){
+    font-size: 23px;
+    margin-top: -70px;
+}
+
+.merrygoround{
+    width: 100%;
+}
+.miniblackribbon img{
+    width: 357px;
+    height: 357px;
+    margin-top: -78px;
+}
+.merrygoround,.humkoukyu1,.icebanner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.merrygoround,.humkoukyu1,.icebanner img{
+    height: auto;
+    object-fit: cover;
+}
+.humkoukyu1,.icebanner img{
+    flex: 1;
+    max-width: 100%;
+}
