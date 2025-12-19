@@ -21,32 +21,95 @@
     <section>
         <h2 class="text">Banner</h2>
         <div class="banner">
-            <img src="./image/humPOP1.png" alt="ハンバーガーバナーPOP1全面" class="slide humPOP1">
-            <img src="./image/mobilebanner.png" alt="モバイルバナー" class="slide mobilebanner">
-            <img src="./image/icebanner.png" alt="アイスバナー全面" class="slide icebanner">
+            <div>
+                <img src="./image/humPOP1.png" alt="ハンバーガーバナーPOP1全面" class="slide humPOP1">
+                <div class="button">view more</div>
+            </div>
+            <div>
+                 <img src="./image/mobilebanner.png" alt="モバイルバナー" class="slide mobilebanner">
+                <div class="button">view more</div>
+            </div>
+            <div>
+                <img src="./image/icebanner.png" alt="アイスバナー全面" class="slide icebanner">
+                <div class="button">view more</div>
+            </div>
+            <div>
+                <img src="./image/humkoukyu1.png" alt="ハンバーガーバナー高級2全面">
+                <div class="button">view more</div>
+            </div>
+            <div>
+                <img src="./image/humPOP2.png" alt="ハンバーガーバナーPOP2全面">
+                <div class="button">view more</div>
+            </div>
+            <div>
+                <img src="./image/humkoukyu2.png" alt="ハンバーガー高級2全面">
+                <div class="button">view more</div>
+            </div>
+           
+            
         </div>
-        <div class="button">
-            view more           &gt;
 
-        </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-        </div>
+        </div> -->
 
         <h2 class="text">WEBdesign</h2>
         <div class="webdesign">
-            <img src="./image/cowerkingWEB.png" alt="コワーキング">
-            <img src="./image/hairsalonWEB.png" alt="美容室">
+            <div>
+             <img src="./image/cowerkingWEB.png" alt="コワーキング">
+             <div class="button">view more</div>
+            </div>
+
+            <div>
+             <img src="./image/hairsalonWEB.png" alt="美容室">
+             <div class="button">view more</div>
+            </div>
         </div>
 
         <h2 class="text">Coding</h2>
         <div>
             <img src="./image/cafeWEB.png" alt="カフェ" class="cafeWEB">
+            <div class="button">view more</div>
         </div>
     </section>
 
+    <section class="contact">
+        <h2 class="text">
+         <p>contact</p>
+         <p>小さな手紙箱</p>
+        </h2>
+        <div>
+            <img src="./image/pale.png" alt="パール">
+            <img src="./image/blackribbonbox.png" alt="黒リボンボックス" class="blackribbonbox">
+            <img src="./image/pale.png" alt="パール">
+        </div>
+
+    </section>
+
+
+
+    <script>
+        $('.banner').slick({
+            dots:true,
+            infinite:true,
+            speed:300,
+            slidersToSclloll:1,
+            slidersToShow:3,
+            responsive:[
+                {
+                    breakpoint:767,
+                    settings:{
+                        slidersToShow:1,
+                        slidersToSclloll:1,
+                        infinite:true,
+                        dots:true
+                    }
+                }
+            ]
+        })
+    </script>
 </body>
 </html>
