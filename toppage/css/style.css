@@ -133,16 +133,19 @@ h2 p:nth-child(2){
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 200px;
+    padding: 0 100px;
     box-sizing: border-box;
     position: relative;
-    width: 1285px;
-    height: 922px;
+    max-width: 1285px;
+    /* height: 922px; */
+    aspect-ratio: 1285 / 922;
+    justify-content: center;
 }
 
 .me{
     width: 302px;
     height: auto;
+    /* margin-left: 109px; */
 }
 .metext{
     margin-left: auto;
@@ -150,7 +153,7 @@ h2 p:nth-child(2){
     position: absolute;
     flex-direction: column;
 }
-.metext p:nth-child(1){
+.metext div p:nth-child(1){
     font-size: 35px;
     margin-bottom: 24px;
 }
@@ -158,6 +161,37 @@ h2 p:nth-child(2){
     font-size: 18px;
 }
 
+.seiza{
+    mix-blend-mode: multiply;
+    width: 452px;
+    height: 345px;
+    margin-top: -150px;
+    text-align: right;
+    display: block;
+
+}
+.seiza2{
+    mix-blend-mode: multiply;
+    width: 452px;
+    height: 345px;
+}
+
+.button{
+    width: 170px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #463f35;
+    border-radius: 24.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #463f35;
+    white-space: pre;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
 /* ワークスのコード */
 h2{
@@ -176,10 +210,12 @@ h2 p:nth-child(2){
 .merrygoround{
     width: 762px;
     margin: 0 auto;
+    display: block;
 }
 
 .miniblackribbon{
     position: absolute;
+    top: 0;
     width: 357px;
     left: 50%;
     transform: translateX(-50%);
@@ -194,3 +230,61 @@ h2 p:nth-child(2){
 .icebanner{
     width: 443px;
 }
+
+
+body{
+	margin:0;
+	padding:0;
+}
+h1{
+	font-size:16px;
+	font-weight:normal;
+	line-height:1.6em;
+	text-align:center;
+	padding:15px 0;
+}
+#idWrap{
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+}
+#idCarousel {
+	position: relative;
+	width:900px;
+	height:500px;
+	overflow:scroll;
+}
+#idTitle{
+	font-weight:bold;
+	padding-bottom:7px;
+}
+.left{
+	display:none;
+	width:40px;
+	height:40px;
+	position:absolute;
+	bottom:0;
+	left:20px;
+	font-weight:bold;
+	font-size:30px;
+	cursor:pointer;
+}
+.right{
+	display:none;
+	width:40px;
+	height:40px;
+	position:absolute;
+	bottom:0;
+	right:20px;
+	font-weight:bold;
+	font-size:30px;
+	cursor:pointer;
+}
+.left:hover,
+.right:hover{
+	color:#666666;
+}
+
+
+/* コンタクトページのコード */
+

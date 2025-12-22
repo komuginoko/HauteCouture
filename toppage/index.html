@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="cloud-carousel.1.0.5.js"></script> 
+    <script type="text/JavaScript" src="jquery.mousewheel.js"></script> 
 </head>
 <body>
     <header class="light">
@@ -53,24 +56,28 @@
          <p>私について</p>
         </h2>
 
-        <!-- <div class="seiza">
+        <div class="seiza"> 
             <img src="./image/seiza.svg" alt="星座">
-        </div> -->
+        </div>
         <div class="matomari">
          <div>
             <img src="./image/me.png" alt="私" class="me">
          </div class="metext">
-         <p>みやざき ほのか</p>
-         <p>真っ白な冬の日に生まれた魚座のおんなのこ<br>
+         <div>
+           <p>みやざき ほのか</p>
+           <p>真っ白な冬の日に生まれた魚座のおんなのこ<br>
            冬が大好きで、冬にもぎゅっと愛されて生まれてきました。<br>
            洋服やメイク、かわいいものが大好きで、<br>
            ふっと心に舞い降りる“トキメキ”に自然と心が惹かれてしまう。<br>
            私にとってトキメキは、日々をそっと輝かせてくれる小さな魔法です。
-         </p>
+           </p>
+           <div class="button">view more</div>
+         </div>
+         
         </div>
-        <!-- <div class="seiza2">
+       <div class="seiza2">
             <img src="./image/seiza.svg" alt="星座">
-        </div> -->
+        </div> 
 
     </section>
 
@@ -79,16 +86,76 @@
          <p>works</p>
          <p>作 品</p>
         </h2>
-        <div class="marryribbon">
+        <div class="merryribbon">
             <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround">
             <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon">   
         </div>
-        <div class="sakuhin">
+       
+       
+       
+       
+        <!-- <div class="sakuhin">
             <img src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" class="humkoukyu1">
             <img src="./image/icebanner.jpg" alt="アイスバナー" class="icebanner">
-        </div>
-    </section>
+        </div> -->
+   
+        <div id="idWrap">
+	      <h1>複数画像を後ろから前に回転表示します</h1>
 
+
+            <div id="idCarousel">
+
+                <div id="idTitle"></div>
+                <div id="idAlt"></div>
+        
+                <img class = "cloudcarousel" src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" title="1個目の画像" /> 
+                <img class = "cloudcarousel" src="./image/icebanner.jpg" alt="アイスバナー" title="2個目の画像" /> 
+                <img class = "cloudcarousel" src="./image/humPOP1.jpg" alt="ハンバーガーPOP1" title="3個目の画像" /> 
+                <img class = "cloudcarousel" src="./image/humkoukyu2.jpg" alt="ハンバーガー高級2" title="4個目の画像" /> 
+                <img class = "cloudcarousel" src="./image/mobilebanner.jpg" alt="モバイルバナー" title="5個目の画像" /> 
+                <img class = "cloudcarousel" src="./image/humPOP2.jpg" alt="ハンバーガーPOP2" title="6個目の画像" /> 
+        
+                <div id="left" class="left">←</div>
+               <div id="right" class="right">→</div>
+
+             </div><!--/idCarousel-->
+
+        </div><!--/idWrap-->
+   </section>
+
+   <script>
+     $(function(){
+  	  $("#idCarousel").CloudCarousel({
+  			xPos: 450,
+  			yPos: 100,
+  			buttonLeft: $("#left"),
+  			buttonRight: $("#right"),
+  			altBox: $("#idAlt"),		//alt
+  			titleBox: $("#idTitle"),	//title
+  			bringToFront:true,			//クリック画像を前に移動
+  			mouseWheel:true,			//マウスホイール回転
+  			autoRotate:true,			//自動回転
+  			autoRotateDelay: 3000		//回転速度
+      	});
+     }); 
+   </script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <section class="contact">
         <h2>
          <p>contact</p>
