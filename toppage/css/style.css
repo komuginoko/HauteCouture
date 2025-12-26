@@ -20,6 +20,10 @@ html,body{
 
 }
 
+img{
+    max-width: 100%;
+}
+
 /* トップページのコード */
 .light{
     position: relative;
@@ -69,7 +73,7 @@ html,body{
 
 .scroll-indicator{
     position: absolute;
-    right: 90px;
+    right: 150px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -77,7 +81,7 @@ html,body{
     align-items: center;
     gap: 36px;
     margin: 0;
-    top: 544px;
+    margin-top: 220px;
 }
 
 .scroll-indicator .line{
@@ -136,40 +140,39 @@ h2 p:nth-child(2){
     padding: 0 100px;
     box-sizing: border-box;
     position: relative;
-    max-width: 1285px;
+    max-width: 1135px;
     /* height: 922px; */
-    aspect-ratio: 1285 / 922;
-    justify-content: center;
+    aspect-ratio: 1135 / 582;
+    justify-content: space-between;
 }
 
 .me{
-    width: 302px;
+    max-width: 302px;
+    width: 27%;
     height: auto;
-    /* margin-left: 109px; */
 }
-.metext{
-    margin-left: auto;
-    text-align: left;
-    position: absolute;
-    flex-direction: column;
-}
-.metext div p:nth-child(1){
+
+.metext p:nth-child(1){
     font-size: 35px;
     margin-bottom: 24px;
+    /* width: 100%; */
 }
-.metext{
+.metext p:nth-child(2){
     font-size: 18px;
+    width: 100%;
+    text-align: center;
 }
 
 .seiza{
     mix-blend-mode: multiply;
-    width: 452px;
-    height: 345px;
     margin-top: -150px;
     text-align: right;
     display: block;
-
 }
+.seiza img{
+    width: 452px;
+}
+
 .seiza2{
     mix-blend-mode: multiply;
     width: 452px;
@@ -177,15 +180,15 @@ h2 p:nth-child(2){
 }
 
 .button{
-    width: 170px;
-    height: 50px;
+    width: 252px;
+    height: 74px;
     background-color: #ffffff;
     border: 2px solid #463f35;
-    border-radius: 24.5px;
+    border-radius: 36.3px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 18px;
     color: #463f35;
     white-space: pre;
     cursor: pointer;
@@ -243,48 +246,114 @@ h1{
 	text-align:center;
 	padding:15px 0;
 }
-#idWrap{
-	width:900px;
-	margin:0 auto;
-	text-align:left;
-}
-#idCarousel {
-	position: relative;
-	width:900px;
-	height:500px;
-	overflow:scroll;
-}
-#idTitle{
-	font-weight:bold;
-	padding-bottom:7px;
-}
-.left{
-	display:none;
-	width:40px;
-	height:40px;
-	position:absolute;
-	bottom:0;
-	left:20px;
-	font-weight:bold;
-	font-size:30px;
-	cursor:pointer;
-}
-.right{
-	display:none;
-	width:40px;
-	height:40px;
-	position:absolute;
-	bottom:0;
-	right:20px;
-	font-weight:bold;
-	font-size:30px;
-	cursor:pointer;
-}
-.left:hover,
-.right:hover{
-	color:#666666;
-}
+ .swiper-container img{
+    filter: grayscale(90%);
+ }
 
 
 /* コンタクトページのコード */
+.blackribbonbox{
+    text-align: center;
+    margin-top: -500px;
+}
+.blackribbonbox img{
+    width: 957px;
+}
+.pale1{
+    text-align: left;
+}
+.pale1 img{
+    width: 490px;
+}
+.pale2{
+    text-align: right;
+    margin-top: -400px;
+    margin-right: 25px;
+}
+.pale2 img{
+    width: 490px;
+}
 
+/* ラストページのコード */
+.cloud img{
+    width: 100%;
+}
+.staring img{
+    width: 100%;
+    /* transform: rotate(330deg); */
+}
+.staring{
+    margin-top: -500px;
+}
+.lasttext{
+    text-align: center;
+    margin-top: -400px;
+}
+
+
+
+
+/* .page-top img{
+    cursor: pointer;
+}
+.page-top img:hover{
+    opacity: 0.8;
+
+} */
+
+
+
+
+
+
+
+
+/* ワークスのアニメーションのコード */
+
+.works > div {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.swiper-container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    box-shadow: 0 0 20px #00000036;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) {
+    opacity: 0;
+}
+
+.swiper-slide-prev, 
+.swiper-slide-next {
+    opacity: 0.3;
+}
+
+.swiper-slide-active {
+    transition: 0.3s all;
+    opacity: 1;
+    margin-top: 700px;
+}

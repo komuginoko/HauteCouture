@@ -39,6 +39,7 @@ html,body{
 
 .banner{
     display: flex;
+    text-align: center;
 }
 
 .banner img{
@@ -91,9 +92,25 @@ html,body{
 
 /* コンタクトの部分 */
 .blackribbonbox{
-    width: 60%;
-    margin: 0 auto;
-    display: block;
+    text-align: center;
+    margin-top: -500px;
+}
+.blackribbonbox img{
+    width: 957px;
+}
+.pale1{
+    text-align: left;
+}
+.pale1 img{
+    width: 490px;
+}
+.pale2{
+    text-align: right;
+    margin-top: -400px;
+    margin-right: 25px;
+}
+.pale2 img{
+    width: 490px;
 }
 
 

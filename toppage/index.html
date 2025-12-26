@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
+    <!-- swiperのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!--  -->
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
     <script type="text/javascript" src="cloud-carousel.1.0.5.js"></script> 
     <script type="text/JavaScript" src="jquery.mousewheel.js"></script> 
+    <!-- swiperのJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
-<body>
+<body id="top">
     <header class="light">
         <div class="toppage">
             <div class="blackribbon">
@@ -60,10 +65,10 @@
             <img src="./image/seiza.svg" alt="星座">
         </div>
         <div class="matomari">
-         <div>
-            <img src="./image/me.png" alt="私" class="me">
-         </div class="metext">
-         <div>
+         <div class="me">
+            <img src="./image/me.png" alt="私">
+         </div>
+         <div class="metext">
            <p>みやざき ほのか</p>
            <p>真っ白な冬の日に生まれた魚座のおんなのこ<br>
            冬が大好きで、冬にもぎゅっと愛されて生まれてきました。<br>
@@ -86,59 +91,29 @@
          <p>works</p>
          <p>作 品</p>
         </h2>
-        <div class="merryribbon">
+        <!-- <div class="merryribbon">
             <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround">
             <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon">   
-        </div>
-       
-       
-       
-       
-        <!-- <div class="sakuhin">
-            <img src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" class="humkoukyu1">
-            <img src="./image/icebanner.jpg" alt="アイスバナー" class="icebanner">
         </div> -->
-   
-        <div id="idWrap">
-	      <h1>複数画像を後ろから前に回転表示します</h1>
+       <div>
+            <div class="merryribbon">
+                <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround">
+                <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon">   
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" title="1個目の画像" /> 
+                    <img class="swiper-slide" src="./image/icebanner.jpg" alt="アイスバナー" title="2個目の画像" /> 
+                    <img class="swiper-slide" src="./image/humPOP1.jpg" alt="ハンバーガーPOP1" title="3個目の画像" />
+                    <img class="swiper-slide" src="./image/humkoukyu2.jpg" alt="ハンバーガー高級2" title="4個目の画像" /> 
+                    <img class="swiper-slide" src="./image/mobilebanner.jpg" alt="モバイルバナー" title="5個目の画像" /> 
+                    <img class="swiper-slide" src="./image/humPOP2.jpg" alt="ハンバーガーPOP2" title="6個目の画像" /> 
+                </div>
+            </div>
+        </div>
+     </section>
 
-
-            <div id="idCarousel">
-
-                <div id="idTitle"></div>
-                <div id="idAlt"></div>
-        
-                <img class = "cloudcarousel" src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" title="1個目の画像" /> 
-                <img class = "cloudcarousel" src="./image/icebanner.jpg" alt="アイスバナー" title="2個目の画像" /> 
-                <img class = "cloudcarousel" src="./image/humPOP1.jpg" alt="ハンバーガーPOP1" title="3個目の画像" /> 
-                <img class = "cloudcarousel" src="./image/humkoukyu2.jpg" alt="ハンバーガー高級2" title="4個目の画像" /> 
-                <img class = "cloudcarousel" src="./image/mobilebanner.jpg" alt="モバイルバナー" title="5個目の画像" /> 
-                <img class = "cloudcarousel" src="./image/humPOP2.jpg" alt="ハンバーガーPOP2" title="6個目の画像" /> 
-        
-                <div id="left" class="left">←</div>
-               <div id="right" class="right">→</div>
-
-             </div><!--/idCarousel-->
-
-        </div><!--/idWrap-->
-   </section>
-
-   <script>
-     $(function(){
-  	  $("#idCarousel").CloudCarousel({
-  			xPos: 450,
-  			yPos: 100,
-  			buttonLeft: $("#left"),
-  			buttonRight: $("#right"),
-  			altBox: $("#idAlt"),		//alt
-  			titleBox: $("#idTitle"),	//title
-  			bringToFront:true,			//クリック画像を前に移動
-  			mouseWheel:true,			//マウスホイール回転
-  			autoRotate:true,			//自動回転
-  			autoRotateDelay: 3000		//回転速度
-      	});
-     }); 
-   </script>
+  
 
 
     
@@ -162,24 +137,58 @@
          <p>小さな手紙箱</p>
         </h2>
         <div>
-            <img src="./image/pale.png" alt="パール">
-            <img src="./image/blackribbonbox.png" alt="黒リボンボックス">
-            <img src="./image/pale.png" alt="パール">
+            <div class="pale1">
+             <img src="./image/pale.png" alt="パール">
+            </div>
+
+            <div class="blackribbonbox">
+             <img src="./image/blackribbonbox.png" alt="黒リボンボックス">
+            </div>
+            <div class="pale2">
+             <img src="./image/pale.png" alt="パール">
+            </div>
         </div>
 
     </section>
 
-    <section class="pagetop">
+    <section class="page-top">
         <div>
-            <img src="./image/cloud.png" alt="雲">
+            <div class="cloud">
+             <img src="./image/cloud.png" alt="雲">
+            </div>
+            <div class="staring">
             <img src="./image/star.png" alt="星">
+            </div>
         </div>
-        <p>▲</p>
-        <p>Page Top</p>
+        
+        <div class="lasttext">
+         <a class="pagetop" href="#top">
+           <p>▲</p>
+           <p>Page Top</p>
+         </a>
+        </div>
 
     </section>
 
 
-    
+<script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            loop: true,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            spaceBetween: 0,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: false
+            }
+        });
+
+
+    </script>    
 </body>
 </html>
