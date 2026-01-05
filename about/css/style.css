@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+html,body{
+    background-color: #f8f8f8;
+    color:#463f35;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+     font-family:
+    "Yu Gothic",
+    "游ゴシック体",
+    "YuGothic",
+    "游ゴシック",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 271px;
+  height: 249px;
+  
+}
+.logo img{
+    left: 80px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.nav {
+  display: flex;
+  gap: 6ch; 
+  position: absolute;
+  top: 87px;
+  right: 37px;
+}
+
+.nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #463f35;
+}
+
+/* タイトル */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 470px;
+  position: relative;
+  top: 36px;
+}
+
+.arrow {
+  font-size: 60px;
+  position: absolute;
+  left: 160px;
+}
+
+.about {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+}
+
+
+/* アバウトの部分 */
+.image-wrap{
+    position: relative;
+    display: inline-block;
+}
+.image-wrap img:first-child{
+    display: block;
+}
+
+.image-wrap img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wing{
+    width: 941px;
+    margin-top: 200px;
+    text-align: left;
+    margin-left: -40px;
+}
+.bookme{
+    width: 1014px;
+    margin-top: 100px;
+    margin-left: -10px;
+}
+
+
+.matomari{
+    display: flex;
+}
+.jyouhou {
+    margin-top: 200px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+.littlebig{
+    font-size: 25px;
+}
+
+/* ヒストリーの部分 */
+.seiza img{
+    mix-blend-mode: multiply;
+    width: 452px;
+}
+.text{
+    font-size: 21px;
+    text-align: center;
+    line-height: 2.2;
+}
+.big{
+    font-size: 26px;
+    line-height: 1.8;
+}
+.seiza1 {
+    text-align: right;
+}
+
+/* スキルの部分 */
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 16px;
+}
+.dia{
+    width: 298px;
+}
+.four{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    text-align: center;
+}
+/* .dia{
+    display: block;
+    position: relative;
+}
+.diaup{
+    position: absolute;
+
+
+} */
+
+
+
+
+/* コンタクトの部分 */
+.blackribbonbox{
+    text-align: center;
+    margin-top: -500px;
+}
+.blackribbonbox img{
+    width: 957px;
+}
+.pale1{
+    text-align: left;
+}
+.pale1 img{
+    width: 490px;
+}
+.pale2{
+    text-align: right;
+    margin-top: -400px;
+    margin-right: 25px;
+}
+.pale2 img{
+    width: 490px;
+}
+
+.text2 {
+  font-size: 66px;
+  color: #463f35;
+  margin: 0;
+}
+
+.mailbox {
+  font-size: 23px;
+  color: #463f35;
+  margin: 10px 0 30px 0;
+  text-align: center;
+}

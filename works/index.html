@@ -11,15 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="logo">
-            <img src="./image/hautecouturelogo.svg" alt="オートクチュールロゴ">
-        </h1>
-        <p class="family">
-         <span>about</span>
-         <span>works</span>
-         <span>contact</span>
-        </p>
+    <header class="header">
+      <img src="./image/hautecouturelogo.svg" alt="ロゴ" class="logo">
+
+      <nav class="nav">
+          <a href="#">about</a>
+          <a href="#">works</a>
+          <a href="#">contact</a>
+      </nav>
     </header>
 
     <section>
@@ -34,7 +33,7 @@
                 <div class="button">view more</div>
             </div>
             <div>
-                <img src="./image/icebanner.png" alt="アイスバナー全面" class="slide icebanner">
+                <img src="./image/icebanner.png" alt="アイスバナー全面" class="slideicebanner">
                 <div class="button">view more</div>
             </div>
             <div>
@@ -109,6 +108,8 @@
             speed:300,
             slidersToSclloll:1,
             slidersToShow:3,
+            centerMode:true,
+            centerPadding:"25%",
             responsive:[
                 {
                     breakpoint:767,

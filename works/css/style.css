@@ -8,31 +8,43 @@ html,body{
 
 }
 
-/* ヘッダーの部分 */
-.header{
-    position: relative;
-    height: 250px;
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 271px;
+  height: 249px;
+  
 }
 .logo img{
+    left: 80px;
     position: absolute;
     top: 30px;
     left: 80px;
-    width: 271px;
-    height: 250px;
-}
-.family{
-    position: absolute;
-    top: 87px;
-    right: 37px;
-    font-size: 30px;
-    white-space: nowrap;
 }
 
+.nav {
+  display: flex;
+  gap: 6ch; 
+  position: absolute;
+  top: 87px;
+  right: 37px;
+}
+
+.nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #463f35;
+}
 
 
 /* バナーの部分 */
 .text{
-    margin-top: 340px;
     font-size: 40px;
     text-align: center;
 }
@@ -42,10 +54,13 @@ html,body{
     text-align: center;
 }
 
+.banner > div{
+    text-align: center;
+}
 .banner img{
-    width: auto;
-    height: 621px;
-    display: block;
+    width: 90%;
+    /* height: 621px; */
+    display: inline;
     object-fit: cover;
 }
 .text{
@@ -71,13 +86,15 @@ html,body{
 }
 
 
+
+
 /* WEBデザインの部分 */
 .webdesign {
   justify-content: center;
   align-items: center;
 }
 .webdesign img{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: block;
 }

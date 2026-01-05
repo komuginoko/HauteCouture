@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+html,body{
+    background-color: #f8f8f8;
+    color:#463f35;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+     font-family:
+    "Yu Gothic",
+    "游ゴシック体",
+    "YuGothic",
+    "游ゴシック",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 271px;
+  height: 249px;
+  
+}
+.logo img{
+    left: 80px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.nav {
+  display: flex;
+  gap: 6ch; 
+  position: absolute;
+  top: 87px;
+  right: 37px;
+}
+
+.nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #463f35;
+}
+
+/* タイトル */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 470px;
+  position: relative;
+  top: 36px;
+}
+
+.arrow {
+  font-size: 60px;
+  position: absolute;
+  left: 160px;
+}
+
+.web {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+}
+
+/* ハンバーガー画像の部分 */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    text-align: center;
+}
+.label{
+    font-size: 20px;
+    margin-top: -5px;
+}
+.img-large{
+    width: 758px;
+    height: 891px;
+    object-fit: cover;
+}
+.img-small{
+    width: 478px;
+    /* height: 478px; */
+    object-fit: cover;
+}
+.img-wide{
+    width: 629px;
+    /* height: 354px; */
+    object-fit: cover;
+}
+
+/* 線の部分 */
+.line-with-dots{
+    width: 800px;
+    height: 0;
+    border-top: 1.16px solid #463f35;
+    position: relative;
+    margin: 40px auto;
+}
+.line-with-dots::before,
+.line-with-dots::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #463f35;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line-with-dots::before{
+    left: -3px;
+}
+.line-with-dots::after{
+    right: -3px;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 181px;
+    background-color: #463f35;
+}
+
+.button{
+    width: 170px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #463f35;
+    border-radius: 24.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #463f35;
+    white-space: pre;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    margin-top: 74px;
+}
+
+
+.work-detail{
+    text-align: center;
+    margin-top: 130px;
+}
+
+.plan{
+    font-size: 45px;
+}
+.date{
+    font-size: 20px;
+    margin-top: 36px;
+    font-weight: normal;
+}
+.info-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 18px;
+}
+.info-text p{
+    margin: 6px 0;
+}
+.info-text{
+    text-align: left;
+    font-weight: normal;
+}
+.info-text:first-child{
+    text-align: left;
+    max-width: 370px;
+}
+/* .info-text:last-child{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 200px;
+} */
+.note{
+    font-size: 16px;
+}
+
+.overview-title{
+    font-size: 25px;
+    margin-top: 53px;
+}
+.overview-text{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+
+.contact{
+    text-align: center;
+    margin-top: 83px;
+    position: relative;
+}
+.contacttext{
+    /* position: absolute; */
+    text-align: center;
+    /* top: 20px; */
+}

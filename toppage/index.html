@@ -14,23 +14,26 @@
     <!-- swiperのJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
-<body id="top">
+<body id="top" class="light">
     <header class="light">
         <div class="toppage">
             <div class="blackribbon">
-                <img src="./image/blackribbon.png" alt="黒リボン">
+               <img src="./image/blackribbon.png" alt="黒リボン" class="ribbon-light">
+                <!-- <img src="./dark image/whiteribbon.png" alt="白リボン" class="ribbon-black"> -->
             </div>
-            <div class="ballerina">
-                <img src="./image/ballerina.png" alt="バレリーナ">
+            <div class="ballerina" id="ballerina">
+               <img src="./image/ballerina.png" alt="バレリーナ" class="ballerina-light">
+               <!-- <img src="./dark image/snowballerina.svg" alt="スノーバレリーナ" class="ballerina-dark"> -->
             </div>
+
             <div class="star">
-                <img src="./image/movingstar1.svg" alt="流れ星1">
-                <img src="./image/movingstar2.svg" alt="流れ星2">
+                <img src="./image/movingstar1.svg" alt="流れ星1" >
+                <img src="./image/movingstar2.svg" alt="流れ星2" >
             </div>
             <p class="family">
-             <span>about</span>
-             <span>works</span>
-             <span>contact</span>
+               <span>about</span>
+               <span>works</span>
+               <span>contact</span>
             </p>
 
             <p class="scroll-indicator">
@@ -38,20 +41,64 @@
                 <span class="text">scroll</span>
             </p>
 
+            <div class="sp-stage">
+                 <!-- スマホ用枠 -->
+                  <div sp-frame>
+                     <img src="./image/blackiphoneframe.png" alt="フレーム">
+                  </div>
+
+                 <!-- スマホ用 キラキラ -->
+                   <div class="sp-kirakira">
+                      <img src="./image/iphonekirakira.svg" alt="キラキラ">
+                   </div>
+
+                 <!-- スマホ用 パール -->
+                   <div class="sp-pearl">
+                       <img src="./image/pale.png" alt="パール">
+                   </div>
+
+                 <!-- ハンバーガーメニュー（画像） -->
+                   <div class="hamburger">
+                     <img src="./image/bottun.png" alt="メニュー">
+                   </div>
+                   <!-- sp版オートクチュールロゴ -->
+                   <div class="sp-logo">
+                     <img src="./image/hautecouturelogo.svg" alt="Haute coutureロゴsp版">
+                   </div>
+
+             </div>
+         
+
+
+
+
+
+
         </div>
     </header>
 
     <section class="hautecouture">
         <h1 class="logo">
-            <img src="./image/hautecouturelogo.svg" alt="オートクチュールロゴ">
+            <img src="./image/hautecouturelogo.svg" alt="オートクチュールロゴ" class="logo-light">
+            <!-- <img src="./dark image/tearslogo.svg" alt="ティアーズロゴ" class="logo-dark"> -->
         </h1>
-        <p class="pickup">見えないからこそ、そっと心を澄ませて<br>一緒に水の中で寄り添う</p>
-        <p class="minitext">オートクチュールとは、フランス語で「高級仕立て服」という意味で、職人の手作業によって1つ1つ丁寧に作られた一点ものの芸術的な服を指す。<br>
+        <p class="pickup pickup-light">見えないからこそ、そっと心を澄ませて<br>一緒に水の中で寄り添う</p>
+        <!-- <p class="pickup pickup-dark">一粒の涙が、世界で一番透明な宝石になりますように。</p> -->
+        <p class="minitext minitext-light">オートクチュールとは、フランス語で「高級仕立て服」という意味で、職人の手作業によって1つ1つ丁寧に作られた一点ものの芸術的な服を指す。<br>
            それは単なるファッションではなく、その人のためだけに存在する、繊細で深い美しさ。<br>
            自分が作るデザインも、その人のためだけの、優しい光のようなものになることを願って。<br>
            そして水の中で泣いている人の涙に気づける人になる。これは私の人として目指し、大切にしていることである。<br>
            水の中で泣いている人の涙は見えにくく、気づかれにくい。けれど、見えないからこそ、そっと心を澄ませて、一緒に水の中で寄り添える人でありたい。<br>
-           このポートフォリオでは、そうした感情の繊細な揺らぎに気づき、寄り添う眼差しを、オートクチュールのような精神で表現しました｡</p>
+           このポートフォリオでは、そうした感情の繊細な揺らぎに気づき、寄り添う眼差しを、オートクチュールのような精神で表現しました｡
+        </p>
+        <!-- <p class="minitext minitext-dark">誰にも言えず、音もなく溢れる涙がある。<br>
+            それは誰かの目に触れることもなく水の底で静かに揺れている。<br>
+            声にならなかった悲しみ。笑顔の奥で静かに溺れていた心。水の底のように深くて冷たくてでも確かにそこに在る痛み。<br>
+            見えなくても、聞こえなくても存在を感じ、触れずに包み込むようなそんなデザインがきっとある。<br>
+            Tears Couture, a Silent light___それは悲しみを否定せず、そのまま美しさへと縫い上げていく祈り<br>
+            私は、ただそこに在ることで心に触れるデザインを信じている。
+        </p> -->
+        
 
     </section>
 
@@ -62,7 +109,7 @@
         </h2>
 
         <div class="seiza"> 
-            <img src="./image/seiza.svg" alt="星座">
+            <img src="./image/seiza.svg" alt="星座" class="star-light1">
         </div>
         <div class="matomari">
          <div class="me">
@@ -81,7 +128,7 @@
          
         </div>
        <div class="seiza2">
-            <img src="./image/seiza.svg" alt="星座">
+            <img src="./image/seiza.svg" alt="星座" class="star-light2">
         </div> 
 
     </section>
@@ -91,14 +138,12 @@
          <p>works</p>
          <p>作 品</p>
         </h2>
-        <!-- <div class="merryribbon">
-            <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround">
-            <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon">   
-        </div> -->
+        
        <div>
             <div class="merryribbon">
-                <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround">
-                <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon">   
+                <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround merrygoround-light">
+                <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon miniblackribbon-light"> 
+                <!-- <img src="./dark image/lightmerrygoround.png" alt="ライトメリーゴーランド" class="merrygoround-dark">   -->
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -117,20 +162,6 @@
 
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <section class="contact">
         <h2>
          <p>contact</p>
@@ -142,7 +173,8 @@
             </div>
 
             <div class="blackribbonbox">
-             <img src="./image/blackribbonbox.png" alt="黒リボンボックス">
+             <img src="./image/blackribbonbox.png" alt="黒リボンボックス" class="blackribbonbox-light">
+             <!-- <img src="./dark image/whiteribbonbox.png" alt="白リボンボックス" class="whiteribbonbox-dark"> -->
             </div>
             <div class="pale2">
              <img src="./image/pale.png" alt="パール">
@@ -163,7 +195,9 @@
         
         <div class="lasttext">
          <a class="pagetop" href="#top">
-           <p>▲</p>
+           <p class="sankaku">
+            <img src="./image/sankaku.svg" alt="三角形">
+           </p>
            <p>Page Top</p>
          </a>
         </div>
@@ -187,6 +221,58 @@
                 slideShadows: false
             }
         });
+
+
+
+
+        
+         const ballerina = document.getElementById("ballerina");
+
+         let points = [];
+         let isDrawing = false;
+
+         ballerina.addEventListener("mousedown", start);
+         ballerina.addEventListener("mousemove", move);
+         ballerina.addEventListener("mouseup", end);
+
+         function start(e) {
+             points = [];
+             isDrawing = true;
+             points.push({ x: e.offsetX, y: e.offsetY });
+            }
+
+         function move(e) {
+              if (!isDrawing) return;
+              points.push({ x: e.offsetX, y: e.offsetY });
+            }
+
+         function end() {
+             isDrawing = false;
+              if (isCircle(points)) {
+                  document.body.classList.toggle("dark");
+                  document.body.classList.toggle("light");
+                }
+            }
+
+// 円っぽいか判定（超シンプル）
+         function isCircle(points) {
+             if (points.length < 30) return false;
+
+             const start = points[0];
+             const end = points[points.length - 1];
+
+             const dx = start.x - end.x;
+             const dy = start.y - end.y;
+             const distance = Math.sqrt(dx * dx + dy * dy);
+
+             return distance < 30; // 始点と終点が近い
+            }
+
+
+
+
+
+
 
 
     </script>    
