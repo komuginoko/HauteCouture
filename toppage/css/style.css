@@ -394,9 +394,9 @@ h1{
 
 /* 裏テーマ */
 /* body .dark .ribbon-light,
-body .dark .logo-light
-body .dark .pickup-light
-body .dark .minitext-light
+body.dark .logo-light
+body.dark .pickup-light
+body.dark .minitext-light
 body .dark .star-light1
 body .dark .star-light2
 body .dark .merrygoround-light
@@ -434,15 +434,19 @@ body .dark .img-light{
 
 
 
-.sp-stage
+
 .sp-frame,
 .sp-kirakira,
 .sp-pearl,
-.hamburger {
+.hamburger,
+.sp-logo {
     display: none;
 }
 
 @media screen and (max-width: 767px) {
+    .logo{
+        display: none;
+    }
     .sp-stage{
         /* display: block; */
         position: relative;
@@ -453,7 +457,8 @@ body .dark .img-light{
 
     .sp-frame,
     .sp-kirakira,
-    .sp-pearl{
+    .sp-pearl,
+    .sp-logo{
         display: block;
     }
 
@@ -464,8 +469,7 @@ body .dark .img-light{
   /* ===== 舞台 ===== */
   .sp-stage {
     position: relative;
-    width: 469px;
-    height: 725px;
+    max-width: 469px;
     margin: 0 auto;
   }
 
@@ -570,3 +574,4 @@ body .dark .img-light{
     .scroll-indicator {
         display: none !important;
     }
+}

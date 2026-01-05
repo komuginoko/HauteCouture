@@ -26,8 +26,9 @@ img{
 
 
 /* 背景 + Contact */
-.hero {
-  background-image: url('backstar.png') center/cover no-repeat;
+body {
+  background-image: url('../image/backstar.png');
+
   text-align: center;
   padding: 100px 0;
 }

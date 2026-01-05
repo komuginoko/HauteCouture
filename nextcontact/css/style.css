@@ -52,14 +52,18 @@ img{
 }
 .inyouso{
     position: absolute;
-    width: 100%;
-    top: 0;
-}
-.thankyou{
-    width: 496px;
-    height: 328px;
+    top: 41%;
     text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.inyouso img{
+    text-align: center;
+    width: 50%;
+    max-width: 496px;
+}
+
 
 .inyouso p{
     font-size: 20px;
