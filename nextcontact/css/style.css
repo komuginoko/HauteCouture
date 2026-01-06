@@ -1,11 +1,18 @@
 @charset "utf-8";
 
+body{
+    background-image: url(../image/backstar.png);
+}
+background-container::before{
+    opacity: 0.35;
+}
+
+
 html,body{
     margin: 0;
-    background-image: url(backstar.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     color:#463f35;
     width: 100%;
     margin: 0;
@@ -62,6 +69,8 @@ img{
     text-align: center;
     width: 50%;
     max-width: 496px;
+    margin-top: 45px;
+    margin-left: -5%;
 }
 
 
@@ -69,6 +78,8 @@ img{
     font-size: 20px;
     line-height: 1.75;
     text-align: center;
+    margin: 0 auto;
+    margin-left: -33px;
 }
 
 .button{
@@ -86,4 +97,5 @@ img{
     cursor: pointer;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 40px;
 }

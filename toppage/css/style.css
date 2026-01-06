@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 html,body{
-    /* background-color: #f8f8f8;
-    color:#463f35; */
+    background-color: #f8f8f8;
+    color:#463f35;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -369,58 +369,33 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 画像切り替え */
-
-/* デフォルト */
-.ribbon-dark,
-.logo-dark{
-    display: none;
-}
-
 /* 裏テーマ */
-/* body .dark .ribbon-light,
-body.dark .logo-light
-body.dark .pickup-light
-body.dark .minitext-light
-body .dark .star-light1
-body .dark .star-light2
-body .dark .merrygoround-light
-body .dark .miniblackribbon-light
-body .dark .blackribbonbox-light{
-    display: none;
+:root{
+    --bg-color: #020002;
+    --bg-color: white;
+}
+body{
+    background-color: #f8f8f8;
+    color:#463f35;
 }
 
-body .dark .ribbon-dark,
-body .dark .logo-dark
-body .dark .pickup-dark
-body .dark .minitext-dark
-body .dark .merrygoround-dark
-body .dark .miniblackribbon-dark
-body .dark .whiteribbonbox-dark{
-    display: block;
-} */
-
-/* body .light .img-dark{
-    display: none;
+body.dark-mode{
+    --bg-color: #020002;
+    --bg-color: white;
 }
-body .dark .img-light{
-    display: none;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -458,7 +433,8 @@ body .dark .img-light{
     .sp-frame,
     .sp-kirakira,
     .sp-pearl,
-    .sp-logo{
+    .sp-logo,
+    .hamburger{
         display: block;
     }
 
@@ -575,3 +551,7 @@ body .dark .img-light{
         display: none !important;
     }
 }
+
+
+
+

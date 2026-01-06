@@ -28,7 +28,6 @@ img{
 /* 背景 + Contact */
 body {
   background-image: url('../image/backstar.png');
-
   text-align: center;
   padding: 100px 0;
 }
@@ -54,6 +53,11 @@ body {
 .greeting {
   position: relative;
   text-align: center;
+  background-image: url(../image/whiterase.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .lace {
@@ -65,7 +69,7 @@ body {
 
 .text {
   position: absolute;
-  top: 320px;
+  top: -155px;
   width: 80%;
   left: 50%;
   transform: translateX(-50%);
@@ -121,3 +125,4 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
+

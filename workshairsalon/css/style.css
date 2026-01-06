@@ -255,9 +255,13 @@ img{
     text-align: center;
     margin-top: 83px;
     position: relative;
+    margin-bottom: 40px;
 }
 .contacttext{
-    /* position: absolute; */
+    position: absolute;
     text-align: center;
-    /* top: 20px; */
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
 }
