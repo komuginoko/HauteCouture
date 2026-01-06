@@ -28,6 +28,8 @@ img{
 /* 背景 + Contact */
 body {
   background-image: url('../image/backstar.png');
+  background-color: rgba(255, 255, 255, 0.65);
+  background-blend-mode: lighten;
   text-align: center;
   padding: 100px 0;
 }
@@ -58,6 +60,7 @@ body {
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
+  padding: 200px 0;
 }
 
 .lace {
@@ -68,13 +71,12 @@ body {
 }
 
 .text {
-  position: absolute;
   top: -155px;
   width: 80%;
   left: 50%;
-  transform: translateX(-50%);
   font-size: 22px;
   line-height: 1.7;
+  margin: 0 auto;
 }
 
 

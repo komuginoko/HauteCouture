@@ -80,6 +80,7 @@ img{
   font-size: 30px;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ハンバーガー画像の部分 */
@@ -193,11 +194,15 @@ img{
 }
 .info-text p{
     margin: 6px 0;
-    display: flex;
 }
 .info-text{
     text-align: left;
     font-weight: normal;
+    width: 50%;
+    margin-left: 20px;
+}
+.info-text2{
+  display: flex;
 }
 .info-text:first-child{
     text-align: left;

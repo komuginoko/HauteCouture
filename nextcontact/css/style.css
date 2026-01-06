@@ -2,10 +2,10 @@
 
 body{
     background-image: url(../image/backstar.png);
+    background-color: rgba(255, 255, 255, 0.65);
+    background-blend-mode: lighten;
 }
-background-container::before{
-    opacity: 0.35;
-}
+
 
 
 html,body{
@@ -51,6 +51,7 @@ img{
 
 .letterset{
     position: relative;
+    margin-top: -330px;
 }
 .letter{
     max-width: 1632px;
@@ -59,15 +60,15 @@ img{
 }
 .inyouso{
     position: absolute;
-    top: 41%;
+    top: 45%;
     text-align: center;
-    left: 50%;
+    left: 57.5%;
     transform: translateX(-50%);
 }
 
 .inyouso img{
     text-align: center;
-    width: 50%;
+    width: 80%;
     max-width: 496px;
     margin-top: 45px;
     margin-left: -5%;
@@ -75,7 +76,7 @@ img{
 
 
 .inyouso p{
-    font-size: 20px;
+    font-size: clamp(12px, 1.5vw, 20px);
     line-height: 1.75;
     text-align: center;
     margin: 0 auto;

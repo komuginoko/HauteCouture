@@ -47,6 +47,21 @@ html,body{
 .text{
     font-size: 40px;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.text2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 215px;
+    margin-bottom: 50px;
+}
+
+.text3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 40px;
 }
 
 .banner{
@@ -59,13 +74,8 @@ html,body{
 }
 .banner img{
     width: 90%;
-    /* height: 621px; */
     display: inline;
     object-fit: cover;
-}
-.text{
-    font-size: 40px;
-    text-align: center;
 }
 
 .button{
@@ -97,11 +107,12 @@ html,body{
     width: 70%;
     margin: 0 auto;
     display: block;
+    margin-top: 44px;
 }
 
 .cafeWEB{
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: block;
 
@@ -114,6 +125,7 @@ html,body{
 }
 .blackribbonbox img{
     width: 957px;
+    max-width: 100%;
 }
 .pale1{
     text-align: left;
@@ -129,9 +141,18 @@ html,body{
 .pale2 img{
     width: 490px;
 }
-
-
-
+.text10 p:nth-child(1){
+    font-size: 66px;
+    text-align: center;
+}
+.text10 p:nth-child(2){
+    font-size: 23px;
+    text-align: center;
+    margin-top: -65px;
+}
+.text10{
+    margin-top: 150px;
+}
 
 
 
@@ -160,14 +181,62 @@ html,body{
     height: 3px;
     background-color: #463f35;
     opacity: 0.6;
+    margin-top: 33px;
 }
 .slick-dots li .slick-active button:before{
     background-color: #463f35;
     opacity: 1;
 }
 
+.navSP{
+    display: none;
+}
 
 
 @media screen and (max-width: 767px){
+    .text,
+    .text2,
+    .text3{
+        font-size: 30px;
+    }
+
+    .text10 p:nth-child(1){
+        font-size: 40px;
+    }
+    .text10 p:nth-child(2){
+        font-size: 15px;
+        margin-top: -35px;
+    }
+
+    .banner img{
+        width: 85%;
+    }
+
+    .webdesign img{
+        width: 85%;
+    }
+
+    /* .cafeWEB img{
+        width: 95%;
+    } */
+
+    .nav{
+        display: none;
+    }
+    .navSP img{
+        display: block;
+    }
+
     
+
+    
+
+
+
+
+    
+
+   
+
+   
 }

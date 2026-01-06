@@ -22,6 +22,7 @@ html,body{
 
 img{
     max-width: 100%;
+    vertical-align: bottom;
 }
 
 /* ヘッダー */
@@ -84,15 +85,23 @@ img{
 .image-wrap{
     position: relative;
     display: inline-block;
+    left: 7%;
 }
-.image-wrap img:first-child{
+.image-wrap .wing{
     display: block;
 }
 
-.image-wrap img:last-child{
+.image-wrap .bookme{
     position: absolute;
     top: 0;
     left: 0;
+}
+.image-wrap p{
+    position: absolute;
+    top: 83%;
+    left: 47%;
+    color: white;
+    transform: translateX(-50%);
 }
 
 .wing{
@@ -110,6 +119,7 @@ img{
 
 .matomari{
     display: flex;
+    align-items: center;
 }
 .jyouhou {
     margin-top: 200px;
@@ -156,15 +166,19 @@ h2{
     gap: 20px;
     text-align: center;
 }
-/* .dia{
+.dia{
     display: block;
     position: relative;
+    margin: 0 auto;
 }
 .diaup{
     position: absolute;
-
-
-} */
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    margin: 0;
+}
 
 
 
@@ -203,4 +217,44 @@ h2{
   color: #463f35;
   margin: 10px 0 30px 0;
   text-align: center;
+}
+
+
+@media screen and (max-width: 1035px){
+.image-wrap p{
+    top: 82%;
+    left: 46%;
+}
+}
+
+@media screen and (max-width: 965px){
+    .image-wrap p{
+        top: 80%;
+        left: 46%;
+    }
+
+}
+@media screen and (max-width: 910px){
+    .image-wrap p{
+        top: 79%;
+        left: 46%;
+    }
+}
+@media screen and (max-width: 850px){
+    .image-wrap p{
+        top: 78%;
+        left: 46%;
+    }
+}
+@media screen and (max-width: 795px){
+    .image-wrap p{
+        top: 77%;
+        left: 46%;
+    }
+}
+@media screen and (max-width: 768px){
+    .image-wrap p{
+        top: 76%;
+        left: 46%;
+    }
 }
