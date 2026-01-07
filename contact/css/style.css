@@ -128,3 +128,55 @@ body {
   color: #ffffff;
 }
 
+
+
+@media screen and (max-width: 767px){
+ .greeting{
+  background-image: url(../image/longwhiterase.png);
+ }
+.title{
+  font-size: 30px;
+}
+.mailbox{
+  font-size: 15px;
+}
+.letter{
+  width: 340px;
+}
+.text{
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.note{
+  font-size: 12px;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.input-text{
+  font-size: 12px;
+}
+.list{
+  font-size: 15px;
+}
+
+.submit-btn{
+  width: 155px;
+  height: 51px;
+  font-size: 14px;
+}
+.input-text{
+  font-size: 12px;
+  width: 211px;
+}
+.input-area{
+  width: 225px;
+  font-size: 12px;
+  /* position: absolute; */
+}
+
+}
