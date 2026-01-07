@@ -58,6 +58,10 @@ img{
   color: #463f35;
 }
 
+.navhum{
+    display: none;
+}
+
 /* タイトル */
 .title {
   display: flex;
@@ -131,6 +135,10 @@ img{
     width: 1px;
     height: 181px;
     background-color: #463f35;
+}
+
+.vertical-lineSP{
+    display: none;
 }
 
 .button{
@@ -246,4 +254,85 @@ img{
     left: 50%;
     margin: 0;
     transform: translate(-50%, -50%);
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .nav{
+        display: none;
+    }
+    .navhum{
+        display: block;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .web{
+        font-size: 25px;
+    }
+    .arrow{
+        font-size: 25px;
+        /* margin-left: -100px; */
+    }
+    .mobilepic{
+        flex-direction: column;
+        
+    }
+    .mobilemocup{
+        width: 519px;
+    }
+    .mobilebanner{
+        width: 524px;
+        margin: 10% 10%;
+    }
+
+    .plan{
+        font-size: 25px;
+    }
+    .date{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .info-wrap{
+        font-size: 15px;
+    }
+    .overview-title{
+        font-size: 20px;
+    }
+    .overview-text{
+        font-size: 15px;
+    }
+
+    .line-with-dots{
+        width: 100%;
+    }
+
+    .info-wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vertical-line{
+        /* rotate: 90deg;
+        height: 500px; */
+        display: none;
+    }
+
+    .line-with-dots{
+        width: 500px;
+    }
+
+
+
+    /* 新しい線 */
+    .vertical-lineSP{
+        display: block;
+    }
+   
+
+
 }
