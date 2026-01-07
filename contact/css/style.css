@@ -31,7 +31,7 @@ body {
   background-color: rgba(255, 255, 255, 0.65);
   background-blend-mode: lighten;
   text-align: center;
-  padding: 100px 0;
+  padding: 55px 0;
 }
 
 .title {
@@ -72,7 +72,7 @@ body {
 
 .text {
   top: -155px;
-  width: 80%;
+  width: 70%;
   left: 50%;
   font-size: 22px;
   line-height: 1.7;
@@ -95,7 +95,7 @@ body {
 .input-area {
   display: block;
   margin: 10px auto 20px auto;
-  width: 500px;
+  width: 55%;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   border-radius: 30px;
@@ -113,7 +113,12 @@ body {
   border-radius: 60px;
   padding-top: 10px;
 }
-
+textarea::placeholder{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* 送信ボタン */
 .submit-btn {
@@ -126,6 +131,7 @@ body {
   letter-spacing: 0.1em; 
   cursor: pointer;
   color: #ffffff;
+  margin-top: 5%;
 }
 
 
@@ -171,12 +177,13 @@ body {
 }
 .input-text{
   font-size: 12px;
-  width: 211px;
+  width: 60%;
 }
 .input-area{
-  width: 225px;
+  width: 60%;
   font-size: 12px;
   /* position: absolute; */
 }
+
 
 }

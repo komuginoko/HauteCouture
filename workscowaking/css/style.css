@@ -111,7 +111,7 @@ img{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 65%;
-  height: 59%;
+  height: 60%;
   overflow-y: scroll;
 }
 
@@ -128,17 +128,25 @@ img{
 
 .sp-screen {
   position: absolute;
-  top: 57%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 56%;
-  height: 95%;
+  height: 71%;
   overflow-y: scroll;
+  /* border-radius: 24px; */
 }
 
 .sp-screen img {
   width: 390px;
-  border-radius: 24px;
+}
+
+.scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar::-webkit-scrollbar{
+  display: none;
 }
 
 /* scroll 表示 */
@@ -147,12 +155,12 @@ img{
   flex-direction: column;
   align-items: center;
   position: absolute;
-  right: 200px;
-  top: 195px;
+  right: 5%;
+  top: 20%;
 }
 .scroll2{
-  right: 350px;
-  top: 400px;
+  right: 15%;
+  top: 33%;
 }
 
 .scroll .line {

@@ -85,7 +85,7 @@ img{
 .image-wrap{
     position: relative;
     display: inline-block;
-    left: 7%;
+
 }
 .image-wrap .wing{
     display: block;
@@ -120,6 +120,7 @@ img{
 .matomari{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .jyouhou {
     margin-top: 200px;
@@ -176,7 +177,7 @@ h2{
     color: white;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 0;
 }
 

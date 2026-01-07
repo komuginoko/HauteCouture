@@ -104,7 +104,7 @@ html,body{
   align-items: center;
 }
 .webdesign img{
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     display: block;
     margin-top: 44px;
@@ -112,7 +112,7 @@ html,body{
 
 .cafeWEB{
     align-items: center;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     display: block;
 
@@ -164,20 +164,21 @@ html,body{
 }
 
 .slick-dots li{
-    width: 152px;
+    max-width: 152px;
+    width: 10%;
     height: 3px;
     margin: 0;
 }
 
 .slick-dots li button{
-    width: 152px;
+    width: 100%;
     height: 3px;
     padding: 0;
 }
 
 .slick-dots li button:before{
     content: '';
-    width: 152px;
+    width: 100%;
     height: 3px;
     background-color: #463f35;
     opacity: 0.6;

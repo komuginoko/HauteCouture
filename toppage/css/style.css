@@ -20,15 +20,16 @@ html,body{
 
 }
 
-/* 表テーマ */
-/* body .light{
+/* .target{
     background-color: #f8f8f8;
-    color:#463f35;
-} */
-/* 裏テーマ */
-/* body .dark{
-    background-color: #000000;
-    color: #ffffff;
+    animation: image_anime 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image_anime{
+    100%{
+        background-color: #000000;
+    }
 } */
 
 img{
@@ -132,10 +133,10 @@ img{
 h2{
     text-align: center;
 }
-h2 p:nth-child(1){
+h2 .abouttitle{
     font-size: 66px;
 }
-h2 p:nth-child(2){
+h2 .abouttext{
     font-size: 23px;
     margin-top: -70px;
 }
@@ -212,10 +213,10 @@ h2 p:nth-child(2){
 h2{
     text-align: center;
 }
-h2 p:nth-child(1){
+h2 .workstitle{
     font-size: 66px;
 }
-h2 p:nth-child(2){
+h2 .workstext{
     font-size: 23px;
     margin-top: -70px;
 }
@@ -231,7 +232,8 @@ h2 p:nth-child(2){
 .miniblackribbon{
     position: absolute;
     top: 0;
-    width: 357px;
+    max-width: 357px;
+    width: 57%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -269,22 +271,39 @@ h1{
     margin-top: -500px;
 }
 .blackribbonbox img{
-    width: 957px;
+    max-width: 957px;
+    width: 80%;
+    position: relative;
 }
 .pale1{
     text-align: left;
 }
 .pale1 img{
-    width: 490px;
+    max-width: 490px;
+    width: 50%;
 }
 .pale2{
     text-align: right;
-    margin-top: -400px;
-    margin-right: 25px;
+    /* margin-top: -400px;
+    margin-right: 25px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 .pale2 img{
-    width: 490px;
-    margin-bottom: 155px;
+    /* width: 490px;
+    margin-bottom: 155px; */
+    max-width: 490px;
+    width: 50%;
+}
+
+.contacttitle{
+    font-size: 66px;
+    margin-bottom: -2%;
+}
+.contacttext{
+    font-size: 23px;
 }
 
 /* ラストページのコード */
@@ -382,18 +401,23 @@ h1{
 
 
 /* 裏テーマ */
-:root{
-    --bg-color: #020002;
-    --bg-color: white;
+/* ライトモードの時はダークモード映さない */
+.blackribbon img.ribbon-dark,
+.blackribbon img.ballerina-dark,
+.blackribbon img.logo-dark{
+    display: none;
 }
-body{
-    background-color: #f8f8f8;
-    color:#463f35;
+/* ボディにダークがつくとブラック要素は表示させる */
+body.dark .blackribbon img.ribbon-dark,
+body.dark .blackribbon img.ballerina-dark,
+body.dark .blackribbon img.logo-dark{
+    display: block;
 }
-
-body.dark-mode{
-    --bg-color: #020002;
-    --bg-color: white;
+/* その時ライト要素は表示させない */
+body.dark .blackribbon img.ribbon-light,
+body.dark .blackribbon img.ballerina-light,
+body.dark .blackribbon img.logolight{
+    display: none;
 }
 
 
@@ -409,7 +433,9 @@ body.dark-mode{
 .sp-kirakira,
 .sp-pearl,
 .hamburger,
-.sp-logo {
+.sp-logo,
+.br-sp,
+.sp-pale{
     display: none;
 }
 
@@ -458,10 +484,10 @@ body.dark-mode{
   /* ===== キラキラ ===== */
   .sp-kirakira {
     position: absolute;
-    top: 25%;
+    top: 19%;
     left: 50%;
     transform: translateX(-50%);
-    width: 56%;
+    width: 66%;
     z-index: 2;
   }
 
@@ -470,7 +496,7 @@ body.dark-mode{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 51%;
+    width: 60%;
     z-index: 2;
     transform: translate(50%, 50%);
     rotate: 180deg;
@@ -491,10 +517,10 @@ body.dark-mode{
 
   /* ===== ロゴ ===== */
   .sp-logo{
-    width: 108px;
+    width: 35%;
     margin: 0 auto;
     position: absolute;
-    top: 17%;
+    top: 6%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -503,7 +529,7 @@ body.dark-mode{
   /* ===== バレリーナ ===== */
   .ballerina {
     position: absolute;
-    bottom: 22%;
+    bottom: 6%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -511,17 +537,79 @@ body.dark-mode{
   }
 
   .ballerina img {
-    width: 214px;
-    height: 342px;
+    width: 100%;
+    height: auto;
   }
 .hamburger {
-    width: 50px;
+    width: 12%;
     position: absolute;
-    top: 50px;
-    right: 40px;
+    top: 3%;
+    right: 5%;
 
 }
  
+.hautecouture .pickup{
+    font-size: 20px;
+    line-height: 2;
+}
+.br-sp{
+    display: block;
+}
+.hautecouture .minitext{
+    font-size: 13px;
+    line-height: 2;
+}
+.aboutme{
+    margin-top: 70px;
+}
+.aboutme .abouttitle{
+    font-size: 25px;
+}
+.aboutme .abouttext{
+    font-size: 10px;
+}
+
+.seiza img,
+.seiza2 img{
+    max-width: 158px;
+}
+.star-light1{
+    width: 80%;
+}
+
+.matomari{
+    background-image: url(../image/lase2.png);
+    display: block;
+}
+.me img{
+    max-width: 110px;
+    width: 80%;
+}
+
+.works .workstitle{
+    font-size: 25px;
+}
+.works .workstext{
+    font-size: 10px;
+}
+.swiper-container{
+    display: none;
+}
+
+.blackribbonbox img{
+    max-width: 340px;
+    width: 80%;
+}
+.pale1,
+.pale2{
+    max-width: 117px;
+    width: 80%;
+}
+
+
+
+
+
 
   /* PC用キラキラ */
     .star {
@@ -537,6 +625,8 @@ body.dark-mode{
     .scroll-indicator {
         display: none !important;
     }
+
+    
 }
 
 

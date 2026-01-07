@@ -74,7 +74,7 @@ img{
 .arrow {
   font-size: 60px;
   position: absolute;
-  left: 160px;
+  left: 20%;
 }
 
 .web {
@@ -93,15 +93,14 @@ img{
     overflow-x: hidden;
     margin-top: 100px;
 }
-.mobilepic img{
-    max-width: 100%;
-    height: auto;
-}
+
 .mobilemocup{
-    width: 619px;
+    max-width: 619px;
+    width: 40%;
 }
 .mobilebanner{
-    width: 624px;
+    max-width: 624px;
+    width: 40%;
 }
 
 
@@ -129,6 +128,10 @@ img{
 }
 .line-with-dots::after{
     right: -3px;
+}
+
+.line-with-dots.sp{
+    display: none;
 }
 
 .vertical-line{
@@ -282,10 +285,12 @@ img{
         
     }
     .mobilemocup{
-        width: 519px;
+        max-width: 519px;
+        width: 70%;
     }
     .mobilebanner{
-        width: 524px;
+        max-width: 524px;
+        width: 80%;
         margin: 10% 10%;
     }
 
@@ -302,14 +307,15 @@ img{
     }
     .overview-title{
         font-size: 20px;
+        margin: 10px 0;
     }
     .overview-text{
         font-size: 15px;
+        width: 90%;
+        margin: auto;
     }
 
-    .line-with-dots{
-        width: 100%;
-    }
+   
 
     .info-wrap{
         flex-direction: column;
@@ -323,7 +329,24 @@ img{
     }
 
     .line-with-dots{
-        width: 500px;
+        max-width: 500px;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .line-with-dots.sp{
+    display: block;
+}
+
+
+    .info-text:first-child{
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    .info-text2{
+        width: 83%;
+        margin: 0 auto;
     }
 
 
