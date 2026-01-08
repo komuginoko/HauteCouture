@@ -36,8 +36,8 @@ img{
 }
 
 .logo {
-  width: 271px;
-  height: 249px;
+  max-width: 271px;
+  width: 30%;
   
 }
 .logo img{
@@ -61,6 +61,10 @@ img{
   color: #463f35;
 }
 
+.navhum{
+    display: none;
+}
+
 /* タイトル */
 .title {
   display: flex;
@@ -73,7 +77,7 @@ img{
 .arrow {
   font-size: 60px;
   position: absolute;
-  left: 160px;
+  left: 20%;
 }
 
 .web {
@@ -100,7 +104,8 @@ img{
     margin-top: -5px;
 }
 .img-large{
-    height: 786px;
+    max-width: 428px;
+    width: 80%;
     object-fit: cover;
     display: flex;
     margin: 0 auto;
@@ -108,13 +113,13 @@ img{
 }
 
 .img-small{
-    width: 478px;
-    /* height: 478px; */
+    max-width: 478px;
+    width: 80%;
     object-fit: cover;
 }
 .img-wide{
-    width: 629px;
-    /* height: 354px; */
+    max-width: 629px;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -204,10 +209,10 @@ img{
 .info-text2{
   display: flex;
 }
-.info-text:first-child{
+/* .info-text:first-child{
     text-align: left;
     max-width: 370px;
-}
+} */
 
 .note{
     font-size: 16px;
@@ -222,6 +227,9 @@ img{
     margin-top: 20px;
     line-height: 1.7;
     font-weight: normal;
+    max-width: 867px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -238,4 +246,119 @@ img{
     left: 50%;
     margin: 0;
     transform: translate(-50%, -50%);
+}
+
+.line-with-dots.sp{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+ .nav{
+        display: none;
+    }
+    .navhum{
+        display: block;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .web{
+        font-size: 25px;
+    }
+    .arrow{
+        font-size: 25px;
+        /* margin-left: -100px; */
+    }
+
+    /* 画像のところ！！！！！！！！ */
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .item .img-large{
+        max-width: 519px;
+        width: 80%;
+    }
+    .item .img-small{
+        max-width: 524px;
+        width: 80%;
+        margin: 10% 10%;
+    }
+    .itam .img-wide{
+        max-width: 524px;
+        width: 80%;
+        margin: 10% 10%;
+    }
+
+    .label{
+        font-size: 15px;
+    }
+
+
+    .plan{
+        font-size: 25px;
+    }
+    .date{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .info-wrap{
+        font-size: 15px;
+    }
+    .overview-title{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .overview-text{
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    .info-wrap{
+      flex-direction: column;
+      text-align: center;
+    }
+
+.vertical-line{
+    /* rotate: 90deg;
+    height: 500px; */
+    display: none;
+}
+
+.line-with-dots{
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.line-with-dots.sp{
+    display: block;
+}
+
+
+.info-text:first-child{
+    width: 83%;
+    margin: 0 auto;
+}
+
+    .info-text2{
+     width: 83%;
+     margin: 0 auto;
+    }
+   .contact{
+     max-width: 713px;
+     width: 80%;
+     margin: 10% auto;
+     font-size: 13px;
+    }
+
+
+    /* 新しい線 */
+    .vertical-lineSP{
+        display: block;
+    }
 }

@@ -33,8 +33,8 @@ img{
 }
 
 .logo {
-  width: 271px;
-  height: 249px;
+  max-width: 271px;
+  width: 30%;
   
 }
 .logo img{
@@ -106,7 +106,8 @@ img{
 
 /* 線の部分 */
 .line-with-dots{
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     height: 0;
     border-top: 1.16px solid #463f35;
     position: relative;
@@ -140,9 +141,7 @@ img{
     background-color: #463f35;
 }
 
-.vertical-lineSP{
-    display: none;
-}
+
 
 .button{
     width: 170px;
@@ -194,10 +193,11 @@ img{
 }
 .info-text p:nth-child(2){
     flex-direction: column;
+} 
+
+.note{
+    font-size: 16px;
 }
-
-
-
 
 
 
@@ -228,9 +228,7 @@ img{
     justify-content: flex-start;
     max-width: 200px;
 } */
-.note{
-    font-size: 16px;
-}
+
 
 .overview-title{
     font-size: 25px;
@@ -318,37 +316,42 @@ img{
    
 
     .info-wrap{
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
 
-    .vertical-line{
-        /* rotate: 90deg;
-        height: 500px; */
-        display: none;
-    }
+.vertical-line{
+    /* rotate: 90deg;
+    height: 500px; */
+    display: none;
+}
 
-    .line-with-dots{
-        max-width: 500px;
-        width: 90%;
-        margin: 20px auto;
-    }
+.line-with-dots{
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
 
-    .line-with-dots.sp{
+.line-with-dots.sp{
     display: block;
 }
 
 
-    .info-text:first-child{
-        width: 83%;
-        margin: 0 auto;
-    }
+.info-text:first-child{
+    width: 83%;
+    margin: 0 auto;
+}
 
     .info-text2{
-        width: 83%;
-        margin: 0 auto;
+     width: 83%;
+     margin: 0 auto;
     }
-
+   .contact{
+     max-width: 713px;
+     width: 80%;
+     margin: 10% auto;
+     font-size: 13px;
+    }
 
 
     /* 新しい線 */
