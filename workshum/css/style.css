@@ -89,11 +89,45 @@ img{
 
 /* ハンバーガー画像の部分 */
 .gallery{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(2, auto);
     gap: 80px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.box1,
+.box2,
+.box3{
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* .box1{
+    margin: -5% 3%;
+}
+.box2{
+    margin: -10% auto;
+}
+.box3{
+    margin: -10% auto;
+} */
+.box2 .img-small{
+    max-width: 478px;
+    width: 70%;
+}
+.box2 .img-wide{
+    max-width: 629px;
+    width: 70%;
+}
+.box3 .img-small{
+    max-width: 478px;
+    width: 70%;
+}
+.box3 .img-wide{
+    max-width: 629px;
+    width: 70%;
 }
 
 .item{
@@ -104,8 +138,8 @@ img{
     margin-top: -5px;
 }
 .img-large{
-    max-width: 428px;
-    width: 80%;
+    /* max-width: 428px;
+    width: 80%; */
     object-fit: cover;
     display: flex;
     margin: 0 auto;
@@ -113,13 +147,13 @@ img{
 }
 
 .img-small{
-    max-width: 478px;
-    width: 80%;
+    /* max-width: 478px;
+    width: 80%; */
     object-fit: cover;
 }
 .img-wide{
-    max-width: 629px;
-    width: 80%;
+    /* max-width: 629px;
+    width: 80%; */
     object-fit: cover;
 }
 
@@ -278,6 +312,14 @@ img{
         flex-direction: column;
         
     }
+
+    .box1,
+    .box2,
+    .box3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
     .item .img-large{
         max-width: 519px;
         width: 80%;

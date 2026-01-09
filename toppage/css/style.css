@@ -20,7 +20,7 @@ html,body{
 
 }
 
-/* .target{
+body.dark{
     background-color: #f8f8f8;
     animation: image_anime 1s ease;
     animation-fill-mode: forwards;
@@ -28,12 +28,25 @@ html,body{
 
 @keyframes image_anime{
     100%{
-        background-color: #000000;
+        background-color: #020202;
+    }
+}
+
+/* body.dark{
+    color: #463f35;
+    animation: image_anime 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image_anime{
+    100%{
+        color: #f8f8f8;
     }
 } */
 
 img{
     max-width: 100%;
+    vertical-align: bottom;
 }
 
 /* トップページのコード */
@@ -135,11 +148,14 @@ h2{
 }
 h2 .abouttitle{
     font-size: 66px;
+    margin-bottom: 0;
 }
 h2 .abouttext{
     font-size: 23px;
-    margin-top: -70px;
+    margin-top: 0;
 }
+
+
 
 .matomari{
     background-image: url(../image/lase.png);
@@ -148,7 +164,7 @@ h2 .abouttext{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 100px;
+    padding: 100px;
     box-sizing: border-box;
     position: relative;
     max-width: 1135px;
@@ -268,35 +284,34 @@ h1{
 /* コンタクトページのコード */
 .blackribbonbox{
     text-align: center;
-    margin-top: -500px;
 }
-.blackribbonbox img{
+
+
+.present{
+    position: relative;
     max-width: 957px;
     width: 80%;
-    position: relative;
+    margin: 0 auto;
 }
 .pale1{
     text-align: left;
-}
-.pale1 img{
+    position: absolute;
+    left: 0;
+    top: 0;
     max-width: 490px;
-    width: 50%;
+    width: 35%;
 }
+
 .pale2{
     text-align: right;
-    /* margin-top: -400px;
-    margin-right: 25px; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-.pale2 img{
-    /* width: 490px;
-    margin-bottom: 155px; */
+    right: 0;
+    bottom: 0;
+    rotate: 180deg;
     max-width: 490px;
-    width: 50%;
+    width: 35%;
 }
+
 
 .contacttitle{
     font-size: 66px;
@@ -307,15 +322,12 @@ h1{
 }
 
 /* ラストページのコード */
-.cloud{
+.page-top{
     position: relative;
 }
+
 .cloud img{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .staring img{
     width: 100%;
@@ -323,22 +335,25 @@ h1{
 }
 .staring{
     position: absolute;
-    top: 101%;
+    bottom: 0;
 
 }
 .lasttext{
     text-align: center;
-    margin-top: -400px;
-}
-
-.pagetop img{
-    width: 229px;
-}
-.pagetop{
-    text-align: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 10%;
+
+}
+
+.pagetop img{
+    max-width: 213px;
+    width: 85%;
+    margin-bottom: 13%;
+}
+.pagetop{
+    text-align: center;
 }
 
 
@@ -403,22 +418,152 @@ h1{
 /* 裏テーマ */
 /* ライトモードの時はダークモード映さない */
 .blackribbon img.ribbon-dark,
-.blackribbon img.ballerina-dark,
-.blackribbon img.logo-dark{
+.ballerina img.ballerina-dark,
+.hautecouture img.logo1-dark,
+.hautecouture img.logo2-dark,
+.star img.kiratoppage-dark,
+.hautecouture p.pickup-dark,
+.hautecouture p.minitext-dark,
+.merryribbon img.merrygoround-dark,
+.blackribbonbox img.whiteribbonbox-dark,
+.lasttext img.pagetop-dark,
+.staring img.hoshi-dark,
+.huroku img.kiramerry-dark,
+.huroku img.snow-dark,
+.logokira img.kiralogoabout1-dark,
+.aboutkira img.kiralogoabout2-dark{
     display: none;
 }
 /* ボディにダークがつくとブラック要素は表示させる */
 body.dark .blackribbon img.ribbon-dark,
-body.dark .blackribbon img.ballerina-dark,
-body.dark .blackribbon img.logo-dark{
+body.dark .ballerina img.ballerina-dark,
+body.dark .logo img.logo1-dark,
+body.dark .logo img.logo2-dark,
+body.dark .star img.kiratoppage-dark,
+body.dark .hautecouture p.pickup-dark,
+body.dark .hautecouture p.minitext-dark,
+body.dark .merryribbon img.merrygoround-dark,
+body.dark .blackribbonbox img.whiteribbonbox-dark,
+body.dark .lasttext img.pagetop-dark,
+body.dark .staring img.hoshi-dark,
+body.dark .huroku img.kiramerry-dark,
+body.dark .huroku img.show-dark,
+body.dark .logokira img.kiralogoabout1-dark,
+body.dark .aboutkira img.kiralogoabout2-dark{
     display: block;
 }
 /* その時ライト要素は表示させない */
 body.dark .blackribbon img.ribbon-light,
-body.dark .blackribbon img.ballerina-light,
-body.dark .blackribbon img.logolight{
+body.dark .ballerina img.ballerina-light,
+body.dark .logo img.logo-light,
+body.dark .star img.movingstar-light,
+body.dark .hautecouture p.pickup-light,
+body.dark .hautecouture p.minitext-light,
+body.dark .merryribbon img.merrygoround-light,
+body.dark .merryribbon img.miniblackribbon-light,
+body.dark .blackribbonbox img.blackribbonbox-light,
+body.dark .lasttext img.pagetop-light,
+body.dark .staring img.hoshi-light,
+body.dark .seiza img.star1-light,
+body.dark .seiza2 img.star2-light{
     display: none;
 }
+
+
+body.dark .blackribbon img.ribbon-dark{
+    z-index: 1500;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: -1%;
+}
+body.dark .star img.kiratoppage-dark{
+    z-index: 1300;
+}
+
+body.dark .ballerina img.ballerina-dark{
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    top: -250px;
+    z-index: 1000;
+}
+
+body.dark .scroll-indicator{
+    color: #f8f8f8;
+    border-color: #f8f8f8;
+    top: 29%;
+    z-index: 1300;
+}
+body.dark .logo{
+    display: flex;
+    position: relative;
+}
+body.dark .logo img.logo1-dark{
+    max-width: 579px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+
+}
+body.dark .logo img.logo2-dark{
+    max-width: 712px;
+    width: 80%;
+    position: absolute;
+    right: 0;
+}
+
+
+body.dark .hautecouture p.pickup-dark{
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    z-index: 50;
+
+}
+body.dark .hautecouture p.minitext-dark{
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; */
+    z-index: 50;
+
+}
+body.dark .logokira img.kiralogoabout1-dark{
+     z-index: 10;
+}
+body.dark .aboutkira img.kiralogoabout2-dark{
+    z-index: 40;
+    position: absolute;
+
+}
+.aboutme{
+    z-index: 50;
+    position: relative;
+    top: 0;
+}
+.works{
+    position: relative;
+}
+body.dark .merryribbon img.merrygoround-dark{
+    position: absolute;
+    top: 50%;
+}
+body.dark .huroku img.kiramerry-dark,
+body.dark .huroku img.show-dark{
+    position: absolute;
+}
+
+
+.cloud img{
+    z-index: 100;
+}
+body.dark .staring img.hoshi-dark{
+    position: absolute;
+    z-index: 50;
+}
+
+
+
 
 
 
@@ -435,7 +580,7 @@ body.dark .blackribbon img.logolight{
 .hamburger,
 .sp-logo,
 .br-sp,
-.sp-pale{
+.sp-twinspale{
     display: none;
 }
 
@@ -455,7 +600,8 @@ body.dark .blackribbon img.logolight{
     .sp-kirakira,
     .sp-pearl,
     .sp-logo,
-    .hamburger{
+    .hamburger,
+    .sp-twinspale{
         display: block;
     }
 
@@ -581,9 +727,16 @@ body.dark .blackribbon img.logolight{
     background-image: url(../image/lase2.png);
     display: block;
 }
-.me img{
-    max-width: 110px;
+.me{
+    max-width: 200px;
     width: 80%;
+    margin: 0 auto;
+}
+
+.sp-twinspale{
+    max-width: 291px;
+    width: 20%;
+    margin: 0 auto;
 }
 
 .works .workstitle{
@@ -596,7 +749,7 @@ body.dark .blackribbon img.logolight{
     display: none;
 }
 
-.blackribbonbox img{
+.present{
     max-width: 340px;
     width: 80%;
 }
@@ -606,7 +759,10 @@ body.dark .blackribbon img.logolight{
     width: 80%;
 }
 
-
+.pagetop img{
+    width: 60%;
+    margin-bottom: 4%;
+}
 
 
 

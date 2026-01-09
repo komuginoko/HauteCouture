@@ -131,6 +131,11 @@ img{
     font-size: 25px;
 }
 
+.that{
+    margin-top: 10px;
+}
+
+
 /* ヒストリーの部分 */
 .seiza img{
     mix-blend-mode: multiply;
@@ -140,6 +145,7 @@ img{
     font-size: 21px;
     text-align: center;
     line-height: 2.2;
+    padding: 30px;
 }
 .big{
     font-size: 26px;
@@ -181,45 +187,54 @@ h2{
     margin: 0;
 }
 
+.this{
+    flex-direction: column;
+}
 
 
-
-/* コンタクトの部分 */
+/* コンタクトページのコード */
 .blackribbonbox{
     text-align: center;
-    margin-top: -500px;
 }
-.blackribbonbox img{
-    width: 957px;
+
+
+.present{
+    position: relative;
+    max-width: 957px;
+    width: 80%;
+    margin: 0 auto;
 }
 .pale1{
     text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 490px;
+    width: 35%;
 }
-.pale1 img{
-    width: 490px;
-}
+
 .pale2{
     text-align: right;
-    margin-top: -400px;
-    margin-right: 25px;
-}
-.pale2 img{
-    width: 490px;
-}
-
-.text2 {
-  font-size: 66px;
-  color: #463f35;
-  margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    rotate: 180deg;
+    max-width: 490px;
+    width: 35%;
 }
 
-.mailbox {
-  font-size: 23px;
-  color: #463f35;
-  margin: 10px 0 30px 0;
-  text-align: center;
+
+.contacttitle{
+    font-size: 66px;
+    margin-bottom: -2%;
+}
+.contacttext{
+    font-size: 23px;
 }
 
+.contact h2{
+    margin-top: 10%;
+}
 
 @media screen and (max-width: 1035px){
 .image-wrap p{
