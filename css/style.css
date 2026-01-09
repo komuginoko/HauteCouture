@@ -188,13 +188,14 @@ h2 .abouttext{
 }
 .metext p:nth-child(2){
     font-size: 18px;
+    font-size: clamp(12px, 1.5vw, 18px);
     width: 100%;
     text-align: center;
 }
 
 .seiza{
     mix-blend-mode: multiply;
-    margin-top: -150px;
+    /* margin-top: -150px; */
     text-align: right;
     display: block;
 }
@@ -464,8 +465,8 @@ body.dark .merryribbon img.miniblackribbon-light,
 body.dark .blackribbonbox img.blackribbonbox-light,
 body.dark .lasttext img.pagetop-light,
 body.dark .staring img.hoshi-light,
-body.dark .seiza img.star1-light,
-body.dark .seiza2 img.star2-light{
+body.dark .seiza,
+body.dark .seiza2{
     display: none;
 }
 
@@ -537,9 +538,16 @@ body.dark .aboutkira img.kiralogoabout2-dark{
 
 }
 .aboutme{
-    z-index: 50;
+    /* z-index: 50; */
+    /* top: 0; */
     position: relative;
-    top: 0;
+}
+.aboutall{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55px;
+
 }
 .works{
     position: relative;
@@ -735,8 +743,8 @@ body.dark .staring img.hoshi-dark{
 
 .sp-twinspale{
     max-width: 291px;
-    width: 20%;
     margin: 0 auto;
+    margin-top: -50px;
 }
 
 .works .workstitle{

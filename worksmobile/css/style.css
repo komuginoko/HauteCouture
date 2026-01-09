@@ -183,6 +183,7 @@ img{
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
+    width: 90%;
 }
 .info-text p{
     margin: 6px 0;

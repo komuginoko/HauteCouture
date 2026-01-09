@@ -107,20 +107,23 @@ img{
 /* .box1{
     margin: -5% 3%;
 }
-.box2{
-    margin: -10% auto;
-}
+
 .box3{
     margin: -10% auto;
 } */
-.box2 .img-small{
-    max-width: 478px;
-    width: 70%;
+
+.box2{
+    gap: 38px;
 }
-.box2 .img-wide{
+.box2 .item:nth-child(2){
     max-width: 629px;
-    width: 70%;
+    width: 43%;
 }
+.box2 .item:nth-child(1){
+    max-width: 478px;
+    width: 36%;
+}
+
 .box3 .img-small{
     max-width: 478px;
     width: 70%;
