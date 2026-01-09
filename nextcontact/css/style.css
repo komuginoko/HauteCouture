@@ -51,7 +51,7 @@ img{
 
 .letterset{
     position: relative;
-    margin-top: -330px;
+    margin-top: -22%;
 }
 .letter{
     max-width: 1632px;
@@ -99,4 +99,56 @@ img{
     box-sizing: border-box;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+
+.logo-sp{
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .inyouso{
+        left: 61.5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+/* .inyouso img{
+    margin-top: 0
+}
+.logo-sp{
+    max-width: 345px;
+    width: 80%;
+    margin: 0 auto;
+}
+/* .thankyou{
+    display: none;
+} */
+/* .inyouso{
+    font-size: 12px;
+    left: 62.5%;
+    top: 58%;
+} */ */
+
+
+}
+
+@media screen and (max-width: 420px){
+      .inyouso{  
+          left: 63.5%;
+          top: 52%;
+          max-width: 174px;
+           width: 70%;
+      }
+
+    .logo-sp{
+    display: block;
+    }
+
+    .letter{
+        margin-top: 55px;
+    }
+
+
+      
+
 }

@@ -121,17 +121,22 @@ img{
 }
 .box2 .item:nth-child(1){
     max-width: 478px;
+    width: 33%;
+}
+
+.box3{
+    gap: 38px;
+}
+.box3 .item:nth-child(1){
+    max-width: 629px;
+    width: 43%;
+}
+.box3 .item:nth-child(2){
+    max-width: 478px;
     width: 36%;
 }
 
-.box3 .img-small{
-    max-width: 478px;
-    width: 70%;
-}
-.box3 .img-wide{
-    max-width: 629px;
-    width: 70%;
-}
+
 
 .item{
     text-align: center;
@@ -325,7 +330,7 @@ img{
 }
     .item .img-large{
         max-width: 519px;
-        width: 80%;
+        width: 60%;
     }
     .item .img-small{
         max-width: 524px;

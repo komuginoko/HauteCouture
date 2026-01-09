@@ -22,17 +22,6 @@ html,body{
 
 body.dark{
     background-color: #f8f8f8;
-    animation: image_anime 1s ease;
-    animation-fill-mode: forwards;
-}
-
-@keyframes image_anime{
-    100%{
-        background-color: #020202;
-    }
-}
-
-/* body.dark{
     color: #463f35;
     animation: image_anime 1s ease;
     animation-fill-mode: forwards;
@@ -40,9 +29,12 @@ body.dark{
 
 @keyframes image_anime{
     100%{
+        background-color: #020202;
         color: #f8f8f8;
     }
-} */
+}
+
+
 
 img{
     max-width: 100%;
@@ -421,8 +413,7 @@ h1{
 /* ライトモードの時はダークモード映さない */
 .blackribbon img.ribbon-dark,
 .ballerina img.ballerina-dark,
-.hautecouture img.logo1-dark,
-.hautecouture img.logo2-dark,
+.hautecouture img.logoset-dark,
 .star img.kiratoppage-dark,
 .hautecouture p.pickup-dark,
 .hautecouture p.minitext-dark,
@@ -439,8 +430,7 @@ h1{
 /* ボディにダークがつくとブラック要素は表示させる */
 body.dark .blackribbon img.ribbon-dark,
 body.dark .ballerina img.ballerina-dark,
-body.dark .logo img.logo1-dark,
-body.dark .logo img.logo2-dark,
+body.dark .logo img.logoset-dark,
 body.dark .star img.kiratoppage-dark,
 body.dark .hautecouture p.pickup-dark,
 body.dark .hautecouture p.minitext-dark,
@@ -488,6 +478,9 @@ body.dark .ballerina img.ballerina-dark{
     position: relative;
     top: -250px;
     z-index: 1000;
+    height: 1100px;
+    object-fit: cover;
+
 }
 
 body.dark .scroll-indicator{
@@ -496,23 +489,26 @@ body.dark .scroll-indicator{
     top: 29%;
     z-index: 1300;
 }
+body.dark .scroll-indicator .line{
+    background-color: #f8f8f8;
+}
+
 body.dark .logo{
     display: flex;
     position: relative;
+    align-items: center;
 }
-body.dark .logo img.logo1-dark{
-    max-width: 579px;
-    width: 80%;
+body.dark .logo img.logoset-dark{
+    max-width: 1207px;
+    width: 90%;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    margin-bottom: 59px;
 
 }
-body.dark .logo img.logo2-dark{
-    max-width: 712px;
-    width: 80%;
-    position: absolute;
-    right: 0;
-}
+
 
 
 body.dark .hautecouture p.pickup-dark{
@@ -571,13 +567,29 @@ body.dark .staring img.hoshi-dark{
     z-index: 50;
 }
 
+body.dark .family{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* top: -5%; */
+    bottom: 20%;
+    z-index: 1500;
+}
 
+body.dark .logokira{
+    position: absolute;
+    top: 135%;
+    z-index: 500;
+}
+body.dark .logo img.logoset-dark{
+    z-index: 1000;
 
+}
 
-
-
-
-
+body.dark .aboutme{
+    position: relative;
+    z-index: 1000;
+}
 
 
 

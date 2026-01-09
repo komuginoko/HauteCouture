@@ -34,8 +34,8 @@ img{
 }
 
 .logo {
-  width: 271px;
-  height: 249px;
+  max-width: 271px;
+  width: 30%;
   
 }
 .logo img{
@@ -57,6 +57,10 @@ img{
   font-size: 30px;
   text-decoration: none;
   color: #463f35;
+}
+
+.navhum{
+    display: none;
 }
 
 /* タイトル */
@@ -236,6 +240,10 @@ h2{
     margin-top: 10%;
 }
 
+
+.br-sp{
+    display: none;
+}
 @media screen and (max-width: 1035px){
 .image-wrap p{
     top: 82%;
@@ -273,4 +281,75 @@ h2{
         top: 76%;
         left: 46%;
     }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .nav{
+        display: none;
+    }
+    .navhum{
+        display: block;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .web{
+        font-size: 25px;
+    }
+    .arrow{
+        font-size: 25px;
+        /* margin-left: -100px; */
+    }
+
+    /* .image-wrap,
+    .jyouhou{
+        flex-direction: column;
+    } */
+
+    .text{
+        font-size: 13px;
+    }
+    .big{
+        font-size: 16px;
+    }
+
+    .seiza1{
+        max-width: 136px;
+    }
+
+    .seiza2{
+        max-width: 246px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .subtitle{
+        font-size: 10px;
+    }
+
+    .four{
+        flex-direction: column;
+    }
+
+    .diaup{
+        font-size: 13px;
+    }
+
+    .this{
+        font-size: 12px;
+    }
+
+    .contacttitle{
+    font-size: 25px;
+    }
+    .contacttext{
+    font-size: 10px;
+    }
+
+
 }

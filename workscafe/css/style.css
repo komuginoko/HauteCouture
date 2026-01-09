@@ -33,8 +33,8 @@ img{
 }
 
 .logo {
-  width: 271px;
-  height: 249px;
+  max-width: 271px;
+  width: 30%;
   
 }
 .logo img{
@@ -84,9 +84,8 @@ img{
 .image-row {
   display: flex;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 120px;
   margin-top: 77px;
+  position: relative;
 }
 
 
@@ -102,8 +101,7 @@ img{
 
 /* PC */
 .pc {
-  width: 1197px;
-  height: 836px;
+  max-width: 1197px;
   margin: 0 auto;
 }
 
@@ -112,8 +110,8 @@ img{
   top: 40%;      /* ← 枠画像に合わせて調整 */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 794px;
-  height: 500px;
+  width: 65%;
+  height: 60%;
   overflow-y: scroll;
 }
 
@@ -123,8 +121,8 @@ img{
 
 /* スマホ */
 .sp {
-  width: 694px;
-  height: 814px;
+  max-width: 694px;
+  width: 45%;
   position: relative;
   margin: 0 auto;
 }
@@ -134,13 +132,22 @@ img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 390px;
-  height: 520px;
+  width: 56%;
+  height: 71%;
   overflow-y: scroll;
+  /* border-radius: 24px; */
 }
 
 .sp-screen img {
   width: 390px;
+}
+
+.scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar::-webkit-scrollbar{
+  display: none;
 }
 
 /* scroll 表示 */
@@ -148,6 +155,13 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+.scroll2{
+  right: 15%;
+  top: 33%;
 }
 
 .scroll .line {
@@ -168,9 +182,11 @@ img{
 
 
 
+
 /* 線の部分 */
 .line-with-dots{
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     height: 0;
     border-top: 1.16px solid #463f35;
     position: relative;
@@ -219,6 +235,9 @@ img{
     margin-top: 74px;
 }
 
+.line-with-dots.sp{
+    display: none;
+}
 
 .work-detail{
     text-align: center;
@@ -238,6 +257,9 @@ img{
     align-items: flex-start;
     gap: 10px;
     font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 90%;
 }
 .info-text p{
     margin: 6px 0;
@@ -245,10 +267,15 @@ img{
 .info-text{
     text-align: left;
     font-weight: normal;
+    width: 50%;
+    margin-left: 20px;
+}
+.info-text2{
+  display: flex;
 }
 .info-text:first-child{
     text-align: left;
-    max-width: 370px;
+    /* max-width: 370px; */
 }
 /* .info-text:last-child{
     text-align: left;
@@ -270,6 +297,8 @@ img{
     margin-top: 20px;
     line-height: 1.7;
     font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -286,4 +315,124 @@ img{
     left: 50%;
     margin: 0;
     transform: translate(-50%, -50%);
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .nav{
+        display: none;
+    }
+    .navhum{
+        display: block;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .web{
+        font-size: 25px;
+    }
+    .arrow{
+        font-size: 25px;
+        left: 17%;
+        /* margin-left: -100px; */
+    }
+
+    .plan{
+        font-size: 25px;
+    }
+    .date{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .info-wrap{
+        font-size: 15px;
+    }
+    .overview-title{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .overview-text{
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+    }
+
+   
+
+    .info-wrap{
+      flex-direction: column;
+      text-align: center;
+    }
+
+.vertical-line{
+    /* rotate: 90deg;
+    height: 500px; */
+    display: none;
+}
+
+.line-with-dots{
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.line-with-dots.sp{
+    display: block;
+}
+
+
+.info-text:first-child{
+    width: 83%;
+    margin: 0 auto;
+}
+
+    .info-text2{
+     width: 83%;
+     margin: 0 auto;
+    }
+   .contact{
+     max-width: 713px;
+     width: 80%;
+     margin: 10% auto;
+     font-size: 13px;
+    }
+
+
+    /* 新しい線 */
+    .vertical-lineSP{
+        display: block;
+    }
+
+    .scroll .line{
+      height: 98px;
+    }
+    .scroll .text{
+      font-size: 12px;
+    }
+    .scroll{
+      top: 10%;
+      right: 6%;
+    }
+
+    .scroll2{
+        top: 35%;
+        right: 11%;
+    }
+    .pc-screen {
+     position: absolute;
+     top: 41%;      /* ← 枠画像に合わせて調整 */
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 65%;
+     height: 62%;
+     overflow-y: scroll;
+    }
+
+    
+   
+
+
 }
