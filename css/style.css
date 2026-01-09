@@ -210,7 +210,7 @@ h2 .abouttext{
 }
 
 .button{
-    width: 252px;
+    max-width: 252px;
     height: 74px;
     background-color: #ffffff;
     border: 2px solid #463f35;
@@ -716,6 +716,7 @@ body.dark .staring img.hoshi-dark{
 }
 .aboutme{
     margin-top: 70px;
+    margin-bottom: -185px;
 }
 .aboutme .abouttitle{
     font-size: 25px;
@@ -738,7 +739,7 @@ body.dark .staring img.hoshi-dark{
 }
 .me{
     max-width: 200px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -782,8 +783,15 @@ body.dark .staring img.hoshi-dark{
     margin-bottom: 4%;
 }
 
-
-
+.contacttitle{
+    font-size: 25px;
+}
+.contacttext{
+    font-size: 10px;
+}
+.merryribbon{
+    margin-bottom: 60px;
+}
 
   /* PC用キラキラ */
     .star {
@@ -804,5 +812,9 @@ body.dark .staring img.hoshi-dark{
 }
 
 
-
+@media screen and (max-width: 550px){
+    .sp-twinspale{
+        margin-top: -22%;
+    }
+} 
 
