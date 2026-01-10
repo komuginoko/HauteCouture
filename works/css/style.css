@@ -24,6 +24,12 @@ img{
     vertical-align: bottom;
 }
 
+.viewmore{
+    text-decoration: none;
+    color: inherit;
+
+}
+
 /* ヘッダー */
 .header {
   display: flex;
@@ -32,9 +38,10 @@ img{
   position: relative;
 }
 
-.logo {
-  width: 271px;
-  height: 249px;
+.alogo {
+  max-width: 271px;
+  width: 30%;
+  
   
 }
 .logo img{
@@ -215,7 +222,7 @@ img{
     opacity: 1;
 }
 
-.navSP{
+.navhum{
     display: none;
 }
 
@@ -250,8 +257,10 @@ img{
     .nav{
         display: none;
     }
-    .navSP img{
+    .navhum{
         display: block;
+        width: 50px;
+        margin-right: 20px;
     }
 
     .present{

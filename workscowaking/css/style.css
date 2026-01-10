@@ -334,7 +334,9 @@ img{
     }
     .arrow{
         font-size: 25px;
-        left: 17%;
+        position: absolute;
+        top: -18px;
+        left: -85px;
         /* margin-left: -100px; */
     }
 

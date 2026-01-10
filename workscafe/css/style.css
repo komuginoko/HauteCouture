@@ -337,8 +337,9 @@ img{
     }
     .arrow{
         font-size: 25px;
-        left: 17%;
-        /* margin-left: -100px; */
+        position: absolute;
+        top: -18px;
+        left: -85px;
     }
 
     .plan{

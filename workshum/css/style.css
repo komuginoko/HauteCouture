@@ -313,6 +313,8 @@ img{
     }
     .arrow{
         font-size: 25px;
+        position: absolute;
+        top: -18px;
         /* margin-left: -100px; */
     }
 
