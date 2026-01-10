@@ -349,7 +349,7 @@ img{
 }
 
 
-.info-text:first-child{
+.info-text{
     width: 83%;
     margin: 0 auto;
     flex-direction: column;

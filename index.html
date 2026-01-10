@@ -7,6 +7,7 @@
     <!-- swiperのCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <!--  -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="cloud-carousel.1.0.5.js"></script> 
@@ -36,12 +37,22 @@
             </div>
             <div class="family">
                 <div>
-                  <a class="about" href="#about"></a>
-                  <span>about</span>
+                  <a class="about" href="#about">
+                    <span>about</span>
+                  </a>
                  </div>
 
-               <span>works</span>
-               <span>contact</span>
+                 <div>
+                    <a class="works" href="#works">
+                        <span>works</span>
+                    </a>
+                 </div>
+
+                 <div>
+                    <a class="contact" href="#contact">
+                      <span>contact</span>
+                    </a>
+                  </div>
             </div>
 
             <p class="scroll-indicator">
@@ -142,7 +153,9 @@
            ふっと心に舞い降りる“トキメキ”に自然と心が惹かれてしまう。<br>
            私にとってトキメキは、日々をそっと輝かせてくれる小さな魔法です。
            </p>
-           <div class="button">view more</div>
+           <a href="about/index.html">
+             <div class="button">view more</div>
+           </a>
          </div>
          
         </div>
@@ -155,16 +168,18 @@
 
     </section>
 
-    <section class="works">
-        <h2>
+    <section class="works" id="works">
+        <h2 class="worksall">
          <p class="workstitle">works</p>
          <p class="workstext">作 品</p>
         </h2>
         
        <div>
             <div class="merryribbon">
-                <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround merrygoround-light">
-                <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon miniblackribbon-light"> 
+                <a href="works/index.html">
+                 <img src="./image/merrygoround.png" alt="メリーゴーランド" class="merrygoround merrygoround-light">
+                 <img src="./image/miniblackribbon.png" alt="黒ミニリボン" class="miniblackribbon miniblackribbon-light"> 
+                </a>
                 <img src="./darkimage/lightmerrygoround.png" alt="ライトメリーゴーランド" class="merrygoround-dark">  
             </div>
             <div class="huroku">
@@ -173,7 +188,9 @@
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" title="1個目の画像" /> 
+                    <!-- <a href="workshum/index.html"> -->
+                     <img class="swiper-slide" src="./image/humkoukyu1.jpg" alt="ハンバーガー高級1" title="1個目の画像" /> 
+                    <!-- </a> -->
                     <img class="swiper-slide" src="./image/icebanner.jpg" alt="アイスバナー" title="2個目の画像" /> 
                     <img class="swiper-slide" src="./image/humPOP1.jpg" alt="ハンバーガーPOP1" title="3個目の画像" />
                     <img class="swiper-slide" src="./image/humkoukyu2.jpg" alt="ハンバーガー高級2" title="4個目の画像" /> 
@@ -188,7 +205,7 @@
 
 
     
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>
          <p class="contacttitle">contact</p>
          <p class="contacttext">小さな手紙箱</p>
@@ -198,12 +215,14 @@
              <img src="./image/pale.png" alt="パール">
             </div>
             
-            <div class="blackribbonbox">
+            <a href="contact/index.html">
+               <div class="blackribbonbox">
                   <img src="./image/blackribbonbox.png" alt="黒リボンボックス" class="blackribbonbox-light">
                   <img src="./darkimage/whiteribbonbox.png" alt="白リボンボックス" class="whiteribbonbox-dark">
-             </div>
+                </div>
+            </a>    
             
-              <div class="pale2">
+            <div class="pale2">
              <img src="./image/pale.png" alt="パール">
             </div>
         </div>
@@ -238,7 +257,7 @@
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
-            spaceBetween: 400,
+            spaceBetween: 300,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,

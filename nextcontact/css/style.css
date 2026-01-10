@@ -112,22 +112,26 @@ img{
 }
 
 @media screen and (max-width: 767px) {
-/* .inyouso img{
+.inyouso img{
     margin-top: 0
 }
 .logo-sp{
+    display: block;
     max-width: 345px;
     width: 80%;
     margin: 0 auto;
 }
-/* .thankyou{
+
+.thankyou{
     display: none;
-} */
-/* .inyouso{
-    font-size: 12px;
-    left: 62.5%;
-    top: 58%;
-} */ */
+}
+
+.letter{
+    margin-top: 18%;
+}
+.inyouso {
+    margin-top: 7%;
+}
 
 
 }
@@ -135,7 +139,7 @@ img{
 @media screen and (max-width: 420px){
       .inyouso{  
           left: 63.5%;
-          top: 52%;
+          /* top: 52%; */
           max-width: 174px;
            width: 70%;
       }

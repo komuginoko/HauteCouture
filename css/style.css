@@ -20,6 +20,30 @@ html,body{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+/* サイト遷移ボタンのスタイル */
+.transition-button {
+  /* 下線を非表示にする */
+  text-decoration: none;
+
+  /* 文字色を黒（または任意の色）に設定する */
+  color: #463f35; /* 例: 黒に設定 */
+}
+
+/* ボタンがクリックされた後（訪問済み）のスタイル */
+.transition-button:visited {
+  /* 訪問済みの下線を非表示にする */
+  text-decoration: none;
+
+  /* 訪問済みの文字色も通常時と同じ色に設定する（紫になるのを防ぐ） */
+  color: #463f35; /* 例: 黒に設定 */
+}
+}
+
 body.dark{
     background-color: #f8f8f8;
     color: #463f35;
@@ -234,7 +258,7 @@ h2 .workstext{
 }
 .merrygoround{
     max-width: 762px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: block;
 }
@@ -404,7 +428,7 @@ h1{
 .swiper-slide-active {
     transition: 0.3s all;
     opacity: 1;
-    margin-top: 700px;
+    margin-top: 500px;
 }
 
 
@@ -544,8 +568,16 @@ body.dark .aboutkira img.kiralogoabout2-dark{
     left: 50%;
     transform: translateX(-50%);
     top: 55px;
-
 }
+
+.worksall{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -218px;
+}
+
+
 .works{
     position: relative;
 }
@@ -769,6 +801,10 @@ body.dark .aboutme{
     margin-bottom: 24px;
     text-align: center;
 }
+.worksall{
+    top: -88px;
+}
+
 
 .works .workstitle{
     font-size: 25px;
