@@ -636,7 +636,9 @@ body.dark .aboutme{
     z-index: 1000;
 }
 
-
+body.dark .metext{
+    color: #463f35;
+}
 
 
 
