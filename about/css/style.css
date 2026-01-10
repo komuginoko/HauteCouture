@@ -33,7 +33,7 @@ img{
   position: relative;
 }
 
-.logo {
+.alogo {
   max-width: 271px;
   width: 30%;
   
@@ -72,10 +72,12 @@ img{
   top: 36px;
 }
 
-.arrow {
+.aarrow {
   font-size: 60px;
   position: absolute;
   left: 20%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .about {
@@ -88,11 +90,14 @@ img{
 
 /* アバウトの部分 */
 .image-wrap{
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
+    max-width: 815px;
+    width: 90%;
+    margin-top: 10%;
 
 }
-.image-wrap .wing{
+/* .image-wrap .wing{
     display: block;
 }
 
@@ -100,16 +105,16 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-}
-.image-wrap p{
+} */
+/* .image-wrap p{
     position: absolute;
     top: 83%;
     left: 47%;
     color: white;
     transform: translateX(-50%);
-}
+} */
 
-.wing{
+/* .wing{
     width: 941px;
     margin-top: 200px;
     text-align: left;
@@ -119,7 +124,7 @@ img{
     width: 1014px;
     margin-top: 100px;
     margin-left: -10px;
-}
+} */
 
 
 .matomari{
@@ -251,88 +256,7 @@ h2{
 .br-sp{
     display: none;
 }
-@media screen and (max-width: 1035px){
-.image-wrap p{
-    top: 82%;
-    left: 46%;
-}
-}
 
-@media screen and (max-width: 965px){
-    .image-wrap p{
-        top: 80%;
-        left: 46%;
-    }
-
-}
-@media screen and (max-width: 910px){
-    .image-wrap p{
-        top: 79%;
-        left: 46%;
-    }
-}
-@media screen and (max-width: 850px){
-    .image-wrap p{
-        top: 78%;
-        left: 46%;
-    }
-}
-@media screen and (max-width: 795px){
-    .image-wrap p{
-        top: 77%;
-        left: 46%;
-    }
-}
-@media screen and (max-width: 780px){
-    .image-wrap p{
-        top: 74%;
-    }
-}
-
-
-@media screen and (max-width: 768px){
-    .image-wrap p{
-        top: 76%;
-        left: 46%;
-    }
-}
-
-@media screen and (max-width: 630px){
-    .image-wrap .bookme{
-            top: 6px;
-    }
-}
-
-@media screen and (max-width: 630px){
-    .image-wrap .bookme{
-    top: 15px;
-    }
-}
-
-
-@media screen and (max-width: 480px){
-    .image-wrap .bookme {
-        top: 35px;
-    }
-}
-
-@media screen and (max-width: 480px){
-    
-}
-
-@media screen and (max-width: 350px){
-    .wing{
-        margin-left: -23px;
-    }
-    .image-wrap .bookme {
-        top: 46px;
-    }
-
-    .image-wrap p{
-        top: 79%;
-    }
-
-}
 
 
 
@@ -412,10 +336,11 @@ h2{
     font-size: 10px;
     }
 
-    .image-wrap p {
-        top: 79%;
-        left: 47%;
-        font-size: clamp(5px, 1.5vw,10px);
+    
+
+    .image-wrap{
+      margin-top: 90px;
+      margin-bottom: -50px;
     }
 
 

@@ -32,7 +32,7 @@ img{
   position: relative;
 }
 
-.logo {
+.alogo {
   max-width: 271px;
   width: 30%;
   
@@ -71,10 +71,12 @@ img{
   top: 36px;
 }
 
-.arrow {
+.aarrow {
   font-size: 60px;
   position: absolute;
   left: 20%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .web {

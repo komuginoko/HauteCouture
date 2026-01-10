@@ -65,6 +65,17 @@ img{
     vertical-align: bottom;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* トップページのコード */
 .light{
     position: relative;
@@ -248,10 +259,12 @@ h2{
 }
 h2 .workstitle{
     font-size: 66px;
+    margin: 0 auto;
 }
 h2 .workstext{
     font-size: 23px;
-    margin-top: -70px;
+    /* margin-top: -70px; */
+    margin: 0 auto;
 }
 .merryribbon{
     position: relative;
@@ -571,9 +584,9 @@ body.dark .aboutkira img.kiralogoabout2-dark{
 }
 
 .worksall{
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     top: -218px;
 }
 
@@ -780,6 +793,7 @@ body.dark .aboutme{
 .matomari{
     background-image: url(../image/lase2.png);
     display: block;
+    aspect-ratio: unset;
 }
 .me{
     max-width: 200px;
