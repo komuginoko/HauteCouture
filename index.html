@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="icon" href="image/faviconlogo.png">
+    <link rel="apple-touch-icon"  sizes="180*180" href="image/faviconlogo.png">
     <!-- swiperのCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <!--  -->
@@ -37,19 +38,19 @@
 
             </div>
             <div class="family">
-                <div>
+                <div class="one">
                   <a class="about" href="#about">
                     <span>about</span>
                   </a>
                  </div>
 
-                 <div>
+                 <div class="one">
                     <a class="works" href="#works">
                         <span>works</span>
                     </a>
                  </div>
 
-                 <div>
+                 <div class="one">
                     <a class="contact" href="#contact">
                       <span>contact</span>
                     </a>
@@ -250,7 +251,7 @@
             </div>
             <div class="staring">
             <img src="./image/star.png" alt="星" class="hoshi-light">
-            <img src="./darkimage/kirapagetop.png" alt="キラキラ" class="hoshi-dark">
+            <!-- <img src="./darkimage/kirapagetop.png" alt="キラキラ" class="hoshi-dark"> -->
             </div>
         </div>
         
@@ -289,8 +290,14 @@
 
 
         $('.ballerina-light').on('click', function(){
+            // 画面幅を取得
+            const windowWidth = window.innerWidth;
+
+
+            if(windowWidth > 767){
             $('body').addClass('dark');
             $('body').removeClass('light');
+            }
 
         })
 
@@ -305,6 +312,41 @@
          $('.family').fadeOut();
        });
     });
+
+
+
+    $(function () {
+
+      const windowWidth = window.innerWidth;
+
+      if (windowWidth <= 767) {
+       // SPのとき
+        $('.about').attr('href', 'about/index.html');
+      } else {
+       // PCのとき
+        $('.about').attr('href', '#about');
+     }
+
+
+     if (windowWidth <= 767) {
+       // SPのとき
+        $('.works').attr('href', 'works/index.html');
+      } else {
+       // PCのとき
+        $('.works').attr('href', '#works');
+     }
+
+
+     if (windowWidth <= 767) {
+       // SPのとき
+        $('.contact').attr('href', 'contact/index.html');
+      } else {
+       // PCのとき
+        $('.contact').attr('href', '#contact');
+     }
+
+    });
+
 
 
 

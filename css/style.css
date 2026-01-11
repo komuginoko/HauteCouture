@@ -17,6 +17,7 @@ html,body{
     "Hiragino Sans",
     Meiryo,
     sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -231,6 +232,9 @@ h2 .abouttext{
 }
 .seiza img{
     width: 452px;
+    position: absolute;
+    top: -30px;
+    right: 0;
 }
 
 .seiza2{
@@ -281,7 +285,7 @@ h2 .workstext{
 
 .miniblackribbon{
     position: absolute;
-    top: 0;
+    top: 1%;
     max-width: 357px;
     width: 57%;
     left: 50%;
@@ -401,7 +405,6 @@ h1{
 
 .works > div {
     position: relative;
-    overflow-x: hidden;
 }
 
 .swiper-container {
@@ -412,6 +415,7 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 
 .swiper-wrapper {
@@ -434,6 +438,10 @@ h1{
 
 .swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) {
     opacity: 0;
+}
+
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) img {
+    display: none;
 }
 
 .swiper-slide-prev, 
@@ -460,7 +468,7 @@ h1{
 .merryribbon img.merrygoround-dark,
 .blackribbonbox img.whiteribbonbox-dark,
 .lasttext img.pagetop-dark,
-.staring img.hoshi-dark,
+/* .staring img.hoshi-dark, */
 .huroku img.kiramerry-dark,
 .huroku img.snow-dark,
 .logokira img.kiralogoabout1-dark,
@@ -477,7 +485,7 @@ body.dark .hautecouture p.minitext-dark,
 body.dark .merryribbon img.merrygoround-dark,
 body.dark .blackribbonbox img.whiteribbonbox-dark,
 body.dark .lasttext img.pagetop-dark,
-body.dark .staring img.hoshi-dark,
+/* body.dark .staring img.hoshi-dark, */
 body.dark .huroku img.kiramerry-dark,
 body.dark .huroku img.show-dark,
 body.dark .logokira img.kiralogoabout1-dark,
@@ -495,7 +503,7 @@ body.dark .merryribbon img.merrygoround-light,
 body.dark .merryribbon img.miniblackribbon-light,
 body.dark .blackribbonbox img.blackribbonbox-light,
 body.dark .lasttext img.pagetop-light,
-body.dark .staring img.hoshi-light,
+/* body.dark .staring img.hoshi-light, */
 body.dark .seiza,
 body.dark .seiza2{
     display: none;
@@ -581,6 +589,7 @@ body.dark .hautecouture{
     /* z-index: 50; */
     /* top: 0; */
     position: relative;
+    padding-top: 90px;
 }
 /* .aboutall{
     position: absolute;
@@ -659,6 +668,7 @@ body.dark .metext{
 
 body.dark .merryribbon{
     position: relative;
+    z-index: 1000;
 }
 
 body.dark .huroku img{
@@ -667,9 +677,9 @@ body.dark .huroku img{
     left: 0;
 }
 
-body.dark .merryribbon img.merrygoround-dark{
+/* body.dark .merryribbon img.merrygoround-dark{
     z-index: 1000;
-}
+} */
 
 body.dark .huroku img.kiramerry-dark{
     z-index: 300;
@@ -851,7 +861,7 @@ body.dark .huroku img.snow-dark{
 }
 .aboutall{
     /* top: -7px; */
-    margin-bottom: -90px;
+    margin-bottom: -7px;
 }
 
 .metext p:nth-child(1) {
@@ -899,15 +909,20 @@ body.dark .huroku img.snow-dark{
     margin-bottom: 60px;
 }
 
+.miniblackribbon{
+    top: -1%;
+    width: 48%;
+}
+
   /* PC用キラキラ */
     .star {
         display: none !important;
     }
 
     /* about works contact */
-    .family {
+    /* .family {
         display: none !important;
-    }
+    } */
 
     /* scroll 表示 */
     .scroll-indicator {
@@ -942,12 +957,19 @@ body.dark .huroku img.snow-dark{
     align-items: center;
     gap: 1.2em;
     z-index: 1000;
+
   }
 
   .family a {
     color: #fff;
     font-size: 28px;
+    margin: 65px auto;
   }
+
+  .one{
+    display: flex;
+  }
+
 }
 
 

@@ -30,7 +30,10 @@
            <p class="note">（※の箇所は必須事項になっております）</p>
 
            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfh9XwC3rVbMLj4UCk0mWGyo37t3KUmHeJUP9JCjTSAjR0DYA/formResponse"
-           method="post">
+           method="post"
+           target="hidden_iframe"
+           onsubmit="submitted=true;"
+           class="c-form">
        
                <label class="list">お名前 ※</label>
                <input name="entry.1736676700"       type="text" placeholder="入力してください" class="input-text">
@@ -58,5 +61,16 @@
         </section>
     </section>
     
+
+    <script type="text/javascript">
+        let submitted = false;
+   </script>
+   <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted){window.location='https://docs.google.com/forms/d/e/1FAIpQLSfh9XwC3rVbMLj4UCk0mWGyo37t3KUmHeJUP9JCjTSAjR0DYA/formResponse';}"
+    ></iframe>
+
 </body>
 </html>
