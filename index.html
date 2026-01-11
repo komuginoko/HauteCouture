@@ -295,6 +295,18 @@
         })
 
 
+        $(function () {
+         $('.hamburger').on('click', function () {
+          $('.family').fadeToggle();
+        });
+
+    // メニューを押したら閉じる（SP用）
+        $('.family a').on('click', function () {
+         $('.family').fadeOut();
+       });
+    });
+
+
 
 
         

@@ -756,13 +756,14 @@ body.dark .metext{
     width: 100%;
     height: auto;
   }
-.hamburger {
+/* .hamburger {
     width: 12%;
     position: absolute;
     top: 3%;
     right: 5%;
+    z-index: 100;
 
-}
+} */
  
 .hautecouture .pickup{
     font-size: 20px;
@@ -875,6 +876,39 @@ body.dark .metext{
     }
 
     
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .hamburger {
+    display: block;
+    width: 12%;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 1001;
+  }
+
+  .family {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    z-index: 1000;
+  }
+
+  .family a {
+    color: #fff;
+    font-size: 28px;
+  }
 }
 
 
