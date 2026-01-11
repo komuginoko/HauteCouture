@@ -111,13 +111,21 @@ body {
 .input-area {
   height: 130px;
   border-radius: 60px;
-  padding-top: 10px;
+  padding: 55px 20px;
+}
+
+textarea{
+  position: relative;
 }
 textarea::placeholder{
-  position: absolute;
+  margin: 10px;
+
+
+
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 /* 送信ボタン */
