@@ -234,7 +234,7 @@ h2 .abouttext{
 
 .seiza2{
     mix-blend-mode: multiply;
-    width: 452px;
+    max-width: 452px;
     height: 345px;
 }
 
