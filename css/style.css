@@ -455,6 +455,9 @@ h1{
     margin-top: 500px;
 }
 
+.batubotan{
+    display: none;
+}
 
 
 /* 裏テーマ */
@@ -957,6 +960,7 @@ body.dark .huroku img.snow-dark{
     align-items: center;
     gap: 1.2em;
     z-index: 1000;
+    position: relative;
 
   }
 
@@ -968,6 +972,17 @@ body.dark .huroku img.snow-dark{
 
   .one{
     display: flex;
+    position: relative;
+    top: 22%;
+  }
+  .batubotan{
+    display: block;
+    font-size: 80px;
+    position: absolute;
+    top: 2px;
+    right: 19px;
+    color: #f8f8f8;
+
   }
 
 }
