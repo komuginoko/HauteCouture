@@ -319,6 +319,11 @@ img{
     transform: translate(-50%, -50%);
 }
 
+.modoru{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 

@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+html,body{
+    background-color: #f8f8f8;
+    color:#463f35;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+     font-family:
+    "Yu Gothic",
+    "游ゴシック体",
+    "YuGothic",
+    "游ゴシック",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+
+}
+
+.close-button {
+  position: relative;
+  max-width: 60px; /* バツ全体のサイズ */
+  height: 50px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+.close-button::before,
+.close-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px; /* 線の太さ */
+  height: 100%; /* 線の長さ（親要素の高さ） */
+  background-color: #333;
+  transform-origin: center center; /* 回転の中心を中央に */
+}
+
+.close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 140px;
+}
+
+.three{
+    text-decoration: none;
+    color: inherit;
+}
+
+}
