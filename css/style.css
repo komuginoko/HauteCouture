@@ -201,6 +201,7 @@ h2 .abouttext{
     aspect-ratio: 1135 / 582;
     justify-content: space-between;
     margin: 0 auto;
+    z-index: 100;
 }
 
 .me{
@@ -224,7 +225,7 @@ h2 .abouttext{
 
 .seiza{
     mix-blend-mode: multiply;
-    /* margin-top: -150px; */
+    margin-top: -150px;
     text-align: right;
     display: block;
 }
@@ -550,11 +551,9 @@ body.dark .logo img.logoset-dark{
 
 
 
-body.dark .hautecouture p.pickup-dark{
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%); */
-    z-index: 50;
+body.dark .hautecouture .zenbu{
+    z-index: 1000;
+    position: relative;
 
 }
 body.dark .hautecouture p.minitext-dark{
@@ -571,18 +570,27 @@ body.dark .logokira img.kiralogoabout1-dark{
 body.dark .aboutkira img.kiralogoabout2-dark{
     z-index: 40;
     position: absolute;
+    top: 60%;
 
+}
+
+body.dark .hautecouture{
+    margin-top: -100px;
 }
 .aboutme{
     /* z-index: 50; */
     /* top: 0; */
     position: relative;
 }
-.aboutall{
+/* .aboutall{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 55px;
+} */
+
+.seiza1{
+    margin-top: 10px;
 }
 
 .worksall{
@@ -596,10 +604,10 @@ body.dark .aboutkira img.kiralogoabout2-dark{
 .works{
     position: relative;
 }
-body.dark .merryribbon img.merrygoround-dark{
+/* body.dark .merryribbon img.merrygoround-dark{
     position: absolute;
     top: 50%;
-}
+} */
 body.dark .huroku img.kiramerry-dark,
 body.dark .huroku img.show-dark{
     position: absolute;
@@ -630,6 +638,12 @@ body.dark .logokira{
 }
 body.dark .logo img.logoset-dark{
     z-index: 1000;
+    margin-bottom: 124px;
+
+}
+
+body.dark .aboutall{
+    margin-bottom: 40px;
 
 }
 
@@ -641,6 +655,30 @@ body.dark .aboutme{
 body.dark .metext{
     color: #463f35;
 }
+
+
+body.dark .merryribbon{
+    position: relative;
+}
+
+body.dark .huroku img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body.dark .merryribbon img.merrygoround-dark{
+    z-index: 1000;
+}
+
+body.dark .huroku img.kiramerry-dark{
+    z-index: 300;
+}
+body.dark .huroku img.snow-dark{
+    z-index: 700;
+}
+
+
 
 
 
@@ -812,7 +850,8 @@ body.dark .metext{
     margin-top: -90px;
 }
 .aboutall{
-    top: -7px;
+    /* top: -7px; */
+    margin-bottom: -90px;
 }
 
 .metext p:nth-child(1) {
