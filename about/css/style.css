@@ -330,10 +330,13 @@ h2{
     }
 
     .contacttitle{
-    font-size: 25px;
+    font-size: 30px;
     }
     .contacttext{
-    font-size: 10px;
+    font-size: 12px;
+    }
+    .text4{
+        margin-bottom: 14px;
     }
 
     
