@@ -105,6 +105,11 @@ img{
     display: none;
 }
 
+.modoru{
+    text-decoration: none;
+    color: inherit;
+}
+
 @media screen and (max-width: 1300px) {
     .inyouso{
         left: 61.5%;

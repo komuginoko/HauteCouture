@@ -325,35 +325,29 @@
 
     $(function () {
 
+      function changeLinks() {
       const windowWidth = window.innerWidth;
 
       if (windowWidth <= 767) {
-       // SPのとき
-        $('.about').attr('href', 'about/index.html');
-      } else {
-       // PCのとき
-        $('.about').attr('href', '#about');
-     }
+      // SPのとき
+      $('.about').attr('href', 'about/index.html');
+      $('.works').attr('href', 'works/index.html');
+      $('.contact').attr('href', 'contact/index.html');
+    } else {
+      // PCのとき
+      $('.about').attr('href', '#about');
+      $('.works').attr('href', '#works');
+      $('.contact').attr('href', '#contact');
+    }
+    }
 
+    // 初回読み込み時
+    changeLinks();
 
-     if (windowWidth <= 767) {
-       // SPのとき
-        $('.works').attr('href', 'works/index.html');
-      } else {
-       // PCのとき
-        $('.works').attr('href', '#works');
-     }
+    // リサイズされるたびに実行
+    $(window).on('resize', changeLinks);
 
-
-     if (windowWidth <= 767) {
-       // SPのとき
-        $('.contact').attr('href', 'contact/index.html');
-      } else {
-       // PCのとき
-        $('.contact').attr('href', '#contact');
-     }
-
-    });
+  });
 
 
 

@@ -230,12 +230,12 @@ h2 .abouttext{
     text-align: right;
     display: block;
 }
-.seiza img{
+/* .seiza img{
     width: 452px;
     position: absolute;
     top: -30px;
     right: 0;
-}
+} */
 
 .seiza2{
     mix-blend-mode: multiply;
@@ -527,7 +527,7 @@ body.dark .ballerina img.ballerina-dark{
     max-width: 1440px;
     width: 100%;
     position: relative;
-    top: -250px;
+    top: -225px;
     z-index: 1000;
     height: 1100px;
     object-fit: cover;
@@ -603,6 +603,10 @@ body.dark .hautecouture{
 
 .seiza1{
     margin-top: 10px;
+    width: 452px;
+    position: absolute;
+    top: -30px;
+    right: 0;
 }
 
 .worksall{
