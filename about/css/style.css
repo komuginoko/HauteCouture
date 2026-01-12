@@ -278,6 +278,8 @@ h2{
     }
     .arrow{
         font-size: 25px;
+        position: absolute;
+        top: -18px;
         /* margin-left: -100px; */
     }
 
@@ -378,9 +380,9 @@ h2{
     z-index: 1000;
     position: relative;
 
-  }
+  } */
 
-  .nav a {
+  /* .nav a {
     color: #fff;
     font-size: 28px;
     margin: 65px auto;
@@ -390,8 +392,13 @@ h2{
     display: flex;
     position: relative;
     top: 22%;
-  } */
-  /* .batubotan{
+  } 
+  .one{
+    display: flex;
+    position: relative;
+    top: 22%;
+  }
+  .batubotan{
     display: block;
     font-size: 80px;
     position: absolute;
